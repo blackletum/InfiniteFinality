@@ -1,0 +1,163 @@
+// Choreo version 1
+actor "Gman"
+{
+  channel "walkto"
+  {
+    event moveto "movetowalk1"
+    {
+      time 0.013333 2.213333
+      param "gman_walkpos1"
+      param2 "Walk"
+    }
+    event moveto "movtopos2"
+    {
+      time 2.975309 5.117283
+      param "gman_walkpos2"
+      param2 "Walk"
+    }
+    event moveto "movetopos3"
+    {
+      time 10.133160 12.863318
+      param "gman_walkpos3"
+      param2 "Walk"
+    }
+    event moveto "movetopos4"
+    {
+      time 12.904764 15.230161
+      param "gman_walkpos4"
+      param2 "Walk"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookat"
+    {
+      time 2.197531 10.085579
+      param "!player"
+    }
+  }
+  channel "faceactor"
+  {
+    event face "faceplayer"
+    {
+      time 3.787235 10.139330
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "tie_gesture"
+    {
+      time 4.182539 7.149207
+      param "G_tiefidget"
+      absolutetags playback_time
+      {
+        "apex" 0.238636
+        "accent" 0.468636
+        "loop" 0.478636
+        "end" 0.488636
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.238636
+        "accent" 0.477273
+        "loop" 0.488636
+        "end" 0.488636
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "forwardgesturte"
+    {
+      time 2.182539 4.482540
+      param "HG_forwardright"
+      absolutetags playback_time
+      {
+        "apex" 0.264706
+        "extreme" 0.367647
+        "loop" 0.441176
+        "end" 0.735294
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.264706
+        "extreme" 0.367647
+        "loop" 0.441176
+        "end" 0.735294
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "face"
+    {
+      time 2.031746 10.746032
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.7099 0.1300
+          4.5566 0.6800
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.6647 0.7800
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.3540 0.6200
+          1.6841 0.2400
+        }
+        {
+        }
+        "smile" 
+        {
+          0.4109 0.4600
+          1.8174 0.2400
+          4.6222 0.0500
+          5.8222 0.3500
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          4.5506 0.5600
+          5.6597 0.0700
+          7.1889 0.2900
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          4.2833 0.4900
+          4.9167 0.6700
+        }
+      }
+    }
+  }
+  channel "voice"
+  {
+    event speak "gman\gman_mono34.wav"
+    {
+      time 5.142857 10.347029
+      param "gman\gman_mono34.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+mapname "C:\Program Files (x86)\Steam\steamapps\sourcemods\Epistle Three\maps\ep3_prologue_1.bsp"
+scalesettings
+{
+  "CChoreoView" "84"
+  "RampTool" "100"
+  "ExpressionTool" "34"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,129 @@
+// Choreo version 1
+actor "Uriah"
+{
+  channel "Voice"
+  {
+    event speak "uriah.wav"
+    {
+      time 2.993333 12.024036
+      param "uriah.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moce to"
+  {
+    event moveto "targetwalk_uriah"
+    {
+      time 0.000000 5.346668
+      param "targetwalk_uriah"
+      param2 "Walk"
+      param3 "targetwalk_uriah"
+    }
+    event moveto "mark_vort_uriah_workshop"
+    {
+      time 13.746667 17.006668
+      param "mark_vort_uriah_workshop"
+      param2 "Walk"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "handsclosed"
+    {
+      time 0.453333 7.160000
+      param "g_handclasp"
+      absolutetags playback_time
+      {
+        "in" 0.075313
+        "loop" 0.251045
+        "end" 0.835154
+        "out" 0.934459
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.153061
+        "loop" 0.510204
+        "end" 0.612245
+        "out" 0.816326
+      }
+      sequenceduration 3.300000
+    }
+    event gesture "handhold"
+    {
+      time 7.200000 11.166667
+      param "g_hold_hands"
+      absolutetags playback_time
+      {
+        "in" 0.272727
+        "loop" 0.576271
+        "end" 0.669492
+        "out" 0.788136
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.313559
+        "loop" 0.576271
+        "end" 0.669492
+        "out" 0.788136
+      }
+      sequenceduration 3.966666
+    }
+    event gesture "handsclosed"
+    {
+      time 11.720000 15.653332
+      param "g_handclasp"
+      absolutetags playback_time
+      {
+        "in" 0.128415
+        "loop" 0.272881
+        "end" 0.418644
+        "out" 0.832203
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.153061
+        "loop" 0.510204
+        "end" 0.612245
+        "out" 0.816326
+      }
+      sequenceduration 3.300000
+    }
+  }
+  channel "look face actor"
+  {
+    event face "facecam"
+    {
+      time 0.026667 13.306669
+      param "magnusson_camlook"
+    }
+    event lookat "lookcam"
+    {
+      time 0.500000 13.420001
+      param "magnusson_camlook"
+    }
+    event face "facework"
+    {
+      time 13.680000 17.026667
+      param "mark_vort_Look_uriah_workshop1"
+    }
+    event lookat "lookwork"
+    {
+      time 13.666665 17.020000
+      param "mark_vort_Look_uriah_workshop1"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
