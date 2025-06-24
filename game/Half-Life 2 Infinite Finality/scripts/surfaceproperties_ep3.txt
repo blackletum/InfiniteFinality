@@ -1,0 +1,51 @@
+"snow"
+{
+	"base"		"dirt"
+	"friction"	"1"
+	"stepleft"	"Snow.StepLeft"
+	"stepright"	"Snow.StepRight"
+	"gamematerial"	"N"
+}
+
+"ice"
+{
+	"density"	"917"
+	"friction"	"0.6"
+	"elasticity"	"0.1"
+	
+	"stepleft"	"Ice.StepLeft"
+	"stepright"	"Ice.StepRight"
+	"scraperough"	"Ice.Scrape"
+	"scrapesmooth"	"Ice.Scrape"
+	"impacthard"	"Ice.Damage"
+	"impactsoft"	"Ice.Gentle"
+		
+	"bulletimpact"	"Ice.Damage"
+	"break"			"Ice.Damage"
+
+	"audioroughnessfactor" "0.1"
+	"gamematerial"	"Y"
+}
+
+
+"xen"
+{
+	"density"	"2000"
+	"elasticity" "0.1"
+	"friction"	"0.9"
+	"dampening"	 "200.0"
+
+	"stepleft"	"Xen.StepLeft"
+	"stepright"	"Xen.StepRight"
+	"bulletimpact"	"Watermelon.BulletImpact"
+	"scraperough"	"Wood.ScrapeRough"
+	"scrapesmooth"	"Wood.ScrapeSmooth"
+	"impacthard"	"Wood.ImpactHard"
+	"impactsoft"	"Wood.ImpactSoft"
+
+	"gamematerial"	"H"
+
+	"audioreflectivity" "0.33"
+	"audiohardnessfactor" "0.0"
+	"audioroughnessfactor" "0.1"
+}

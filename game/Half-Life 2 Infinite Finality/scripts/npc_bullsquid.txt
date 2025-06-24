@@ -1,0 +1,18 @@
+//*********************************************************
+// bullsquid NPC sounds
+
+"NPC_Bullsquid.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"		"120, 140"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"bullchicken/stomp2.wav"
+		"wave"	"bullchicken/stomp3.wav"
+	}
+}
+

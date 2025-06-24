@@ -1,0 +1,106 @@
+//Adrian: This file contains the credits info for both the Intro and outro.
+"credits.txt"
+{
+
+//========================================================
+//These are the names used in the intro (trainride)
+//========================================================
+"IntroCreditsNames"
+{
+	"V"	"WeaponIcons"
+	" "	"CreditsText"
+	" "	"CreditsText"
+}
+
+"CreditsParams"
+{
+	"logo" "HALF-LIFE'"
+	"logo2" "== episode two=="
+
+	"fadeintime"	"2.5"
+	"fadeouttime"	"1"
+	"fadeholdtime"	"1.0"
+	"nextfadetime"	"1.0"
+	"pausebetweenwaves" "1.0"
+	"logotime" "1.0"
+	"posx"	"96"
+	"posy"	"360"
+
+	"color" "255 255 255 128"
+
+	// Outro Parameters
+	"scrolltime" "80"
+	"separation"  "10"
+}
+
+//========================================================
+//These are the names used in the outro (outland_12a)
+//========================================================
+"OutroCreditsNames"
+{
+	"H'LF -LIFE 2" "ClientTitleFont"
+	"==infinite finality demo==" "ClientTitleFont"
+	" "	"CreditsOutroText"
+	"V"	"CreditsOutroValve"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+ 	"Voices:"   "CreditsOutroText"
+	"Tubby Hill -  Dr. Arne Magnusson"   "CreditsOutroText"
+	"Preston Evans -  Dr. Isaac Kleiner"   "CreditsOutroText"
+	"Isabel -  Alyx Vance"   "CreditsOutroText"
+	"Fin Nicol-Taylor, Jim Hinchey, Aprelle Houston, wolfy411 -  Combine Radio Chatter"   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+ 	"Developers:"   "CreditsOutroText"
+	"env_wind - Lead Mapper, Texture Artist, Modeler"   "CreditsOutroText"
+	"wolfy411 - Lead Programmer, Concept Artist, Writer, Level Designer, Project Manager"   "CreditsOutroText"
+	"KoolKat - Lead Writer, Musician, Level Designer, PR"   "CreditsOutroText"
+	"Waffles - Mapper, Texture Artist"   "CreditsOutroText"
+	"eyeling - Mapper"   "CreditsOutroText"
+	"Bluu - Artist"   "CreditsOutroText"
+	"Macdrown/Fin Nicol-Taylor - Musician, Writer, Level Designer"   "CreditsOutroText"
+	"LucaBuca - Modeler, Texture Artist, Musician"   "CreditsOutroText"
+	"Alaa - Modeler, Artist"   "CreditsOutroText"
+	"Tubby Hill - Modeler, Texture Artist"   "CreditsOutroText"
+	"Nonamebadass - Modeler, Texture Artist"   "CreditsOutroText"
+	"1cetea - Texture Artist"   "CreditsOutroText"
+	"Silas - Musician, Writer"   "CreditsOutroText"
+	"AJ - Writer"   "CreditsOutroText"
+	"Texas Steve - Weapon Animator"   "CreditsOutroText"
+	"Nuke - General Animator"   "CreditsOutroText"
+	"BT - General Animator"   "CreditsOutroText"
+	"Darth Iron - Modeler"   "CreditsOutroText"
+	"Winjon - Modeler, Texture Artist"   "CreditsOutroText"
+	"Stamisme - Modeler, Texture Artist"   "CreditsOutroText"
+	"Ariana Brutalboss - Concept Artist"   "CreditsOutroText"
+	"Milic - Modeler"   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+ 	"Other Contributors:"   "CreditsOutroText"
+	"Chocofrolik"   "CreditsOutroText"
+	"Dr. Orange"   "CreditsOutroText"
+	"Toupo"   "CreditsOutroText"
+	"Nunozki"   "CreditsOutroText"
+	"Stefan"   "CreditsOutroText"
+	"Gabrielle Akinta, Aprelle Houston, Ailish Marsden, James Skontorogolou, Jim Hinchey, Fin Nicol-Taylor - Bolthole Whiteboard Textures"   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	"And to retroshaffer for putting the original team together."   "CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+	" "	"CreditsOutroText"
+}
+
+
+
+}

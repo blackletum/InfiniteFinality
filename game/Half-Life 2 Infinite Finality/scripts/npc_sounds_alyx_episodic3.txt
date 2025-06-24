@@ -1,0 +1,1499 @@
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+
+////////////////////////////////////////////////////////////////////////
+///////// CHAPTER I ///////////////////////////////
+//////////////////////////////////////////
+
+	//MAP1
+
+"npc_alyx.gordon_if"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_gordon.wav"
+}
+
+"npc_alyx.trapped"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_trapped.wav"
+}
+
+"npc_alyx.get_gravgun"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_get_gravgun.wav"
+}
+
+"npc_alyx.rescued"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_rescued.wav"
+}
+
+"npc_alyx.lost_stuff"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_lost_stuff.wav"
+}
+
+"npc_alyx.finding_new_gear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_finding_new_gear.wav"
+}
+
+"npc_alyx.get_going"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_get_going.wav"
+}
+
+"npc_alyx.cabin01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_cabin.wav"
+}
+
+"npc_alyx.cabin"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_cabin_wonder.wav"
+}
+
+"npc_alyx.ropeladder"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_ropeladder.wav"
+}
+
+"npc_alyx.ropeladder_resistance"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_ropeladder_resistance.wav"
+}
+
+"npc_alyx.just_a_sec"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_ropeladder_pre.wav"
+}
+
+"npc_alyx.alyx_there_you_go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_there_you_go.wav"
+}
+
+"npc_alyx.ideal_route"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_ideal_route.wav"
+}
+
+"npc_alyx.deepest_hole"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_deepest_hole.wav"
+}
+
+"npc_alyx.suit_juice"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_suit_juice.wav"
+}
+
+"npc_alyx.furry"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_furry.wav"
+}
+
+"npc_alyx.cute"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_cute_brain.wav"
+}
+
+"npc_alyx.xen"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_xen_life.wav"
+}
+
+"npc_alyx.pest_controll"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_pest_controll.wav"
+}
+
+"npc_alyx.scanners"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_scanners.wav"
+}
+
+"npc_alyx.ancient"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_ancient.wav"
+}
+
+"npc_alyx.puzzle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_puzzle01.wav"
+}
+
+"npc_alyx.puzzle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_puzzle02.wav"
+}
+
+"npc_alyx.puzzle_beat"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_puzzle_beat.wav"
+}
+
+"npc_alyx.puzzle_beat_fail"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_puzzle_beat_fail.wav"
+}
+
+"npc_alyx.iceaxe"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_iceaxe.wav"
+}
+
+"npc_alyx.xen_growht01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_xen_growths.wav"
+}
+
+"npc_alyx.xen_growht02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_combine_spent.wav"
+}
+
+"npc_alyx.xen_growht03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map1/alyx_that_means.wav"
+}
+
+	
+	//MAP2
+
+"npc_alyx.announcer"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_announcer.wav"
+}
+
+"npc_alyx.catwalk"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_catwalk.wav"
+}
+
+"npc_alyx.combine_job"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_combine_job.wav"
+}
+
+"npc_alyx.dangers_lurk"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_dangers_lurk.wav"
+}
+
+"npc_alyx.dynamite01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_dynamie01.wav"
+}
+
+"npc_alyx.dynamite02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_dynamie02.wav"
+}
+
+"npc_alyx.energy_field"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_energy_field.wav"
+}
+
+"npc_alyx.fried"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_fried.wav"
+}
+
+"npc_alyx.frozen_exit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_frozen_exit.wav"
+}
+
+"npc_alyx.get_ready"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_get_ready.wav"
+}
+
+"npc_alyx.get_to_platform"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_getto_platform.wav"
+}
+
+"npc_alyx.healing_property"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_healing_property.wav"
+}
+
+"npc_alyx.keep_moving"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_keep_moving.wav"
+}
+
+"npc_alyx.let_me_disable"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_letme_disable.wav"
+}
+
+"npc_alyx.nice_work_go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_nice_work_go.wav"
+}
+
+"npc_alyx.one_way_to_do"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_one_way_todo.wav"
+}
+
+"npc_alyx.shock_wave"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_shock_wave.wav"
+}
+
+"npc_alyx.stories"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_stories.wav"
+}
+
+"npc_alyx.woah"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_woah.wav"
+}
+
+"npc_alyx.wonder"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_wonder.wav"
+}
+
+"npc_alyx.xen_pool"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_xen_pool.wav"
+}
+
+"npc_alyx.dynamite03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map2/alyx_puzzle02.wav"
+}
+
+
+	//MAP3
+
+"npc_alyx.cave_exit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_cave_exit.wav"
+}
+
+"npc_alyx.structure"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_structure.wav"
+}
+
+"npc_alyx.open01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_open01.wav"
+}
+
+"npc_alyx.supression_device01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_take_down_ride.wav"
+}
+
+"npc_alyx.supression_device02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_wonder_not_shot.wav"
+}
+
+"npc_alyx.aperture_bunker01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_aperture_bunker.wav"
+}
+
+"npc_alyx.aperture_bunker02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_boreralis_info.wav"
+}
+
+"npc_alyx.open02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_multitool.wav"
+}
+
+"npc_alyx.what_else_here01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_combine_presence.wav"
+}
+
+"npc_alyx.what_else_here02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3/alyx_no_telling.wav"
+}
+
+
+
+	//MAP3B
+
+"npc_alyx.good_going"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_good_going.wav"
+}
+
+"npc_alyx.aperture_installation"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_aperture_installation.wav"
+}
+
+"npc_alyx.aperture_protecting"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_aperture_protecting.wav"
+}
+
+"npc_alyx.bunkers_grenade"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_bunkers_grenade.wav"
+}
+
+"npc_alyx.chopper_got_down"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_chopper_got_down.wav"
+}
+
+"npc_alyx.combine_beaten_us"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_combine_beaten_us.wav"
+}
+
+"npc_alyx.combine_here_long_ago"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_combine_here_long_ago.wav"
+}
+
+"npc_alyx.combine_knew_borealis"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_combine_knew_borealis.wav"
+}
+
+"npc_alyx.come_in_forest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_come_in_forest.wav"
+}
+
+"npc_alyx.contact_with_forest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_contact_with_forest.wav"
+}
+
+"npc_alyx.contacting_from_radiostation"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_contacting_from_radiostation.wav"
+}
+
+"npc_alyx.cover_me_dooropen"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_cover_me_dooropen.wav"
+}
+
+"npc_alyx.done"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_done.wav"
+}
+
+"npc_alyx.gordon_now"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_gordon_now.wav"
+}
+
+"npc_alyx.hang_on"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_hang_on.wav"
+}
+
+"npc_alyx.have_to_go_now"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_have_to_go_now.wav"
+}
+
+"npc_alyx.hoppers"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_hoppers.wav"
+}
+
+"npc_alyx.locked_ofcourse"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_locked_ofcourse.wav"
+}
+
+"npc_alyx.non_recent"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_non_recent.wav"
+}
+
+"npc_alyx.that_did_it"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_that_did_it.wav"
+}
+
+"npc_alyx.they_needto_know"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_they_needto_know.wav"
+}
+
+"npc_alyx.ticket_out"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_ticket_out.wav"
+}
+
+"npc_alyx.wait_here"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_wait_here.wav"
+}
+
+"npc_alyx.white_forest_relay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_white_forest_relay.wav"
+}
+
+"npc_alyx.wonder_leads"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_wonder_leads.wav"
+}
+
+"npc_alyx.thank_you_kleiner"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_thank_you_kleiner.wav"
+}
+
+"npc_alyx.blocked01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_blocked01.wav"
+}
+
+"npc_alyx.unblocked"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_unblocked.wav"
+}
+
+"npc_alyx.look_around_ver01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_look_around_ver01.wav"
+}
+
+"npc_alyx.terminal_look"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_looktrough_terminal.wav"
+}
+
+
+"npc_alyx.look_around_ver02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map3b/alyx_look_around_ver02.wav"
+}
+
+
+//MAP4
+
+
+"npc_alyx.almost_done"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_almost_done.wav"
+}
+
+"npc_alyx.apc"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_apc.wav"
+}
+
+"npc_alyx.bolthole"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_bolthole.wav"
+}
+
+"npc_alyx.cower_me_while_work"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_cower_me_while_work.wav"
+}
+
+"npc_alyx.field_down"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_field_down.wav"
+}
+
+"npc_alyx.gate_controlls"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_gate_controlls.wav"
+}
+
+"npc_alyx.intense"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_intense.wav"
+}
+
+"npc_alyx.keep_watch"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_keep_watch.wav"
+}
+
+"npc_alyx.last_one"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_last_one.wav"
+}
+
+"npc_alyx.power_start"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_power_start.wav"
+}
+
+"npc_alyx.nice_power"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_nice_power.wav"
+}
+
+"npc_alyx.power_to_gate"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_power_to_gate.wav"
+}
+
+"npc_alyx.search_supplies"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_search_supplies.wav"
+}
+
+"npc_alyx.these_generators"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_these_generators.wav"
+}
+
+"npc_alyx.they_found_us"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_they_found_us.wav"
+}
+
+"npc_alyx.town"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_town.wav"
+}
+
+"npc_alyx.transformers"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_transformers.wav"
+}
+
+"npc_alyx.three_generators"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_three_generators.wav"
+}
+
+"npc_alyx.dont_forget_me"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_dont_forget_me.wav"
+}
+
+"npc_alyx.broadcast01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_broadcast01.wav"
+}
+
+
+"npc_alyx.broadcast02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_broadcast02.wav"
+}
+
+
+//MAP5
+
+
+"npc_alyx.what_could_be_here"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map4/alyx_what_could_be_here.wav"
+}
+
+"npc_alyx.boards"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_boards.wav"
+}
+
+"npc_alyx.cabin_ahead"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_cabin_ahead.wav"
+}
+
+"npc_alyx.elevator_approach"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_elevator_approach.wav"
+}
+
+"npc_alyx.ladder"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_ladder.wav"
+}
+
+"npc_alyx.ladder_gasp"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_ladder_gasp.wav"
+}
+
+"npc_alyx.mono01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono01.wav"
+}
+
+"npc_alyx.mono02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono02.wav"
+}
+
+"npc_alyx.mono03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono03.wav"
+}
+
+"npc_alyx.mono04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono04.wav"
+}
+
+"npc_alyx.mono05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono05.wav"
+}
+
+"npc_alyx.mono06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono06.wav"
+}
+
+"npc_alyx.mono07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_mono07.wav"
+}
+
+"npc_alyx.rockfall"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_rockfall.wav"
+}
+
+"npc_alyx.secret_entrance"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_secret_entrance.wav"
+}
+
+"npc_alyx.secret_entrance02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"alyx/map5/alyx_secret_entrance02.wav"
+}
