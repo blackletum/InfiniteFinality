@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "voice"
+  {
+    event speak "alyxohmygod"
+    {
+      time 1.006666 2.910702
+      param "alyx\alyxohmygod.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gesture"
+    {
+      time 1.000000 3.560000
+      param "A_bg_upchindwn"
+      absolutetags playback_time
+      {
+        "apex" 0.144955
+        "extreme" 0.263554
+        "loop" 0.592997
+        "end" 0.724774
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.132530
+        "extreme" 0.240964
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "face"
+    {
+      time 1.000000 3.573334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.4280 1.0000
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

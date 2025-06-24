@@ -1,0 +1,7 @@
+
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/icicle_ice"
+	"$surfaceprop" "Ice"
+
+}

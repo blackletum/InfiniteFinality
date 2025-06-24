@@ -1,0 +1,106 @@
+// Choreo version 1
+event section "gordonwaitalyx"
+{
+  time 0.500000 -1.000000
+  param "noaction"
+}
+actor "Alyx"
+{
+  channel "sound"
+  {
+    event speak "npc_alyx.good_going"
+    {
+      time 0.920000 4.761769
+      param "npc_alyx.good_going"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetogordon"
+    {
+      time 0.048889 0.668885
+      param "!player"
+      param2 "Run"
+      resumecondition
+      distancetotarget 70.00
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture"
+    {
+      time 1.333333 4.133333
+      param "A_bg_acc_dwn_left"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.580000 4.740000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.2920 0.2900
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "facelookat"
+  {
+    event face "faceplayer"
+    {
+      time 0.726667 4.753334
+      param "!player"
+      event_ramp
+      {
+        0.4980 0.9773
+        3.5080 0.9773
+      }
+    }
+    event lookat "lookatgordon"
+    {
+      time 0.633334 4.753334
+      param "!player"
+      event_ramp
+      {
+        0.5060 0.9924
+        3.6880 0.9848
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

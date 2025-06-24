@@ -1,0 +1,10 @@
+SDK_WorldVertexTransition
+{
+	"$basetexture" "tile/tileroof002a"
+	"$bumpmap" "tile/tileroof003a_normal"
+	"$basetexture2" "nature/snow_ep3"
+	"$bumpmap2" "nature/snow_ep3_normal"
+	"$surfaceprop" "Tile"
+	"$surfaceprop2" "Snow"
+	"$blendmodulatetexture" "nature/blendtexture03"
+}

@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/Alyx/alyx_winter_dirty"
+	"$bumpmap" "models/Alyx/alyx_winter_dirty_normal"
+}

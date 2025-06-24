@@ -1,0 +1,8 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"metal/metalpipe_vent001b"
+	"$envmap"		"env_cubemap"
+	"$basealphaenvmapmask"		"1"
+	"$envmaptint"		"[ 0.05 0.05 0.05 ]"
+	"$model"		"1"
+}

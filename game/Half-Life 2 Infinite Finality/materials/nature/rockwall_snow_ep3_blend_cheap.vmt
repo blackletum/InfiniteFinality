@@ -1,0 +1,8 @@
+SDK_WorldVertexTransition
+{
+	"$basetexture2" "nature/rockwall_cave01_dark"
+	"$basetexture" "nature/snow_ep3"
+	"$surfaceprop2" "Rock"
+	"$surfaceprop" "Snow"
+	"$blendmodulatetexture" "nature/rock_blend"
+}

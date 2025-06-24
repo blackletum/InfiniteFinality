@@ -1,0 +1,12 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/bullchicken/Bullsquid"
+	"$bumpmap"	"models/bullchicken/Bullsquid_normal"
+	"$halflambert" "1"
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongalbedotint" "1"										
+	"$phongfresnelranges"	"[0.1 .5  1]"
+	"$phongexponenttexture" "Models/bullchicken/Bullsquid_phongexponent"
+	"$phongexponent" 35
+}

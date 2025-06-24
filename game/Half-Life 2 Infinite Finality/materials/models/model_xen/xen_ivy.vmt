@@ -1,0 +1,38 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_xen/xen_ivy"
+	"$surfaceprop" "AlienFlesh"
+	"$alphatest" 1
+	"$nocull" 1
+	"$nodecal" 1
+	"$vertexfog" 1
+	"$vertexcolor" 1
+
+"$translate" "[0 0]"
+
+"Proxies"
+{
+	Sine
+	{
+		sineperiod	4
+		sinemin		0
+		sinemax		0.007
+		timeoffset	0
+		resultVar	"$translate[0]"
+	}
+	Sine
+	{
+		sineperiod	5.5
+		sinemin		0
+		sinemax		0.007
+		timeoffset	0
+		resultVar	"$translate[1]"
+	}
+	
+	TextureTransform
+        {
+		translateVar	$translate
+		resultVar	$basetexturetransform
+        }
+}
+}

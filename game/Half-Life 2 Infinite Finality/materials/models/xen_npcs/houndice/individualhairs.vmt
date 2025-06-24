@@ -1,0 +1,7 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/xen_npcs/houndice/individualhairs"
+	"$surfaceprop" "Alienflesh"
+	"$translucent" 1
+	"$nocull" 1
+}

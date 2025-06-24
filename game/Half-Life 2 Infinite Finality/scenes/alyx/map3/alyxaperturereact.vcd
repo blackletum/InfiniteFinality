@@ -1,0 +1,207 @@
+// Choreo version 1
+event section "pause"
+{
+  time 2.133333 -1.000000
+  param "noaction"
+}
+actor "Alyx"
+{
+  channel "Sound"
+  {
+    event speak "npc_alyx.aperture_bunker01"
+    {
+      time 2.491667 8.697676
+      param "npc_alyx.aperture_bunker01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.aperture_bunker02"
+    {
+      time 8.833334 16.833334
+      param "npc_alyx.aperture_bunker02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatlogo"
+    {
+      time 2.765000 6.421667
+      param "aperturelogo"
+      event_ramp
+      {
+        0.5040 0.9697
+        2.7520 0.9848
+      }
+    }
+    event face "faceplayer"
+    {
+      time 6.424999 16.936666
+      param "!player"
+      event_ramp
+      {
+        0.5120 1.0000
+        10.2070 0.9621
+      }
+    }
+    event face "facelogo"
+    {
+      time 2.816667 6.425000
+      param "aperturelogo"
+      event_ramp
+      {
+        0.4960 0.9924
+        3.0000 0.9924
+      }
+    }
+    event lookat "lookplayer"
+    {
+      time 6.425002 16.925001
+      param "!player"
+      event_ramp
+      {
+        0.4980 0.9848
+        9.7700 0.9697
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesure01"
+    {
+      time 2.691666 5.491666
+      param "A_bg_acc_dwn_left"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+    }
+    event gesture "gesture02"
+    {
+      time 6.391667 9.225000
+      param "A_gesture07"
+      absolutetags playback_time
+      {
+        "apex" 0.202381
+        "accent" 0.357143
+        "loop" 0.547619
+        "end" 0.666667
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.202381
+        "accent" 0.357143
+        "loop" 0.547619
+        "end" 0.666667
+      }
+      sequenceduration 2.833333
+    }
+    event gesture "gesture034"
+    {
+      time 9.700000 12.666666
+      param "A_gesture03p"
+      absolutetags playback_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 2.341667 16.933334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.3103 0.0800
+          3.5462 0.4600
+          4.1513 0.4800
+          12.0209 0.3700
+          12.6884 0.5800
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.8286 0.6000
+          1.8857 0.5300
+          2.7111 0.4700
+          3.2861 0.3700
+          3.5222 0.0700
+          9.7535 0.1000
+          9.9488 0.6800
+          11.1604 0.8200
+          12.6674 1.0000
+          13.5721 0.7800
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          7.0565 0.0700
+          7.4159 0.5700
+          8.3484 0.5000
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          6.9467 0.1100
+          7.4105 0.6100
+          8.3838 0.4100
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "goto"
+  {
+    event moveto "movtobunker"
+    {
+      time 0.225000 2.525000
+      param "alyxgotopoint1"
+      param2 "Run"
+      resumecondition
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "ExpressionTool" "86"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

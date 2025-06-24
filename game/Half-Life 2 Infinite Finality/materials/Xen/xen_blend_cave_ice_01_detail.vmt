@@ -1,0 +1,17 @@
+SDK_WorldVertexTransition
+{
+	"$basetexture2" "Xen/xen_ground04"
+	"$basetexture" "nature/icewallep3"
+	"$bumpmap" "nature/icewallep3_normal_ss"
+	"$bumpmap2" "xen/xen_ground04_normal_ss"
+	"$surfaceprop" "ice"
+	"$surfaceprop2" "xen"
+	"$blendmodulatetexture" "nature/blendtexture01"
+	"%detailtype" "xen_hair"
+
+	$ssbump			1
+	$ssbumpmathfix	1
+
+
+	"$seamless_scale" .005
+}

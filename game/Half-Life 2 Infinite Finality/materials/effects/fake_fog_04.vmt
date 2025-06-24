@@ -1,0 +1,6 @@
+SDK_UnlitGeneric
+{
+	"$basetexture" "effects/fake_fog_04"
+	"$nodecal" 1
+	"$translucent" 1
+}

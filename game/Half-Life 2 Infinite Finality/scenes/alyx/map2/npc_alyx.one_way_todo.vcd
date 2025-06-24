@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.one_way_to_do"
+    {
+      time 0.200000 2.219002
+      param "npc_alyx.one_way_to_do"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

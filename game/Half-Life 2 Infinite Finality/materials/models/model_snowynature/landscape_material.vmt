@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_snowynature/landscape_material"
+	"$bumpmap" "models/model_snowynature/landscape_material_normal"
+	"$surfaceprop" "Boulder"
+}

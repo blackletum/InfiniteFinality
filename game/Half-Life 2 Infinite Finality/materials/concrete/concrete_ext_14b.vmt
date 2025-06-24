@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+$baseTexture "concrete/concrete_ext_14b"
+$surfaceprop concrete
+"%keywords" l4d2
+}

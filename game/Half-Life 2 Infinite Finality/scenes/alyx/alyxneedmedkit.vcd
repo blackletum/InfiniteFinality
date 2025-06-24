@@ -1,0 +1,93 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "Flex"
+  {
+    event flexanimation "face"
+    {
+      time -0.006667 9.006667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          1.0694 0.2900
+          1.2061 0.9100
+          1.5755 0.7500
+          2.0061 0.1600
+        }
+        "inner_raiser" combo 
+        {
+          0.2234 0.9200
+          1.1447 0.6000
+          5.5444 0.3100
+          6.4111 0.9200
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.7851 0.0000
+          1.0149 0.0000
+          1.2333 0.9700
+          2.5156 0.6100
+        }
+        {
+        }
+        "bite" 
+        {
+          1.0200 0.0000
+          1.1533 0.0000
+          1.2200 1.0000
+          1.3435 0.2700
+        }
+        "lip_bite" 
+        {
+          1.0444 0.1200
+          1.3111 0.9200
+          3.6889 0.0000
+          5.0444 0.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          1.0404 0.3600
+          1.2250 0.0000
+          1.5282 0.0300
+          1.9634 0.5400
+          3.1405 0.5200
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "look at"
+    {
+      time 0.000000 9.013333
+      param "!player"
+    }
+  }
+  channel "voice"
+  {
+    event speak "alyx\alyxneedmedkit.wav"
+    {
+      time 0.006667 8.381815
+      param "alyx\alyxneedmedkit.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

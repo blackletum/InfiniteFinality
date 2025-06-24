@@ -1,0 +1,9 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "metal/metalwall036a"
+	"$surfaceprop"  "metal"
+	"$detail" "detail\metal_detail_01"
+	"$detailscale" "4.283"
+	"$detailblendfactor" .8
+	"$detailblendmode" "0"
+}

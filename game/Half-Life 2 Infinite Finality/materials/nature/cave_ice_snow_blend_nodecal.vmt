@@ -1,0 +1,13 @@
+WorldVertexTransition
+{
+	"$basetexture" "nature/snow_ep3"
+	"$basetexture2" "nature/icewallep3"
+	"$bumpmap" "nature/icewallep3_normal_ss"
+	"$surfaceprop" "Snow"
+	"$surfaceprop2" "ice"
+	"$blendmodulatetexture" "nature/blendtexture05"
+	"$seamless_scale" .005
+	"$nodecal" 1
+	$ssbump			1
+	$ssbumpmathfix	1
+}

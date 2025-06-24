@@ -1,0 +1,13 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/headcrab_classic/headcrabfur"
+	"$surfaceprop" "Flesh"
+	"$AlphaTest" "1"
+	"$allowAlphaToCoverage"	"1"
+
+//	"$nocull" 1
+	"$model" 1
+
+	"$FlashlightNoLambert" "1"
+	"$receiveflashlight" 1
+}

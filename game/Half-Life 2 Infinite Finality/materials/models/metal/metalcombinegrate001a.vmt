@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"Metal/metalcombinegrate001a"
+	"%compilepassbullets"		"1"
+	"$alphatest"		"1"
+	"$allowAlphaToCoverage"		"1"
+	"%keywords"		"c17industrial,wasteland"
+	"$model"		"1"
+	$nocull		1
+}

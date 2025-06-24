@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "mat_hiperborea/concrete_snowy_01"
+	"$surfaceprop" "concrete"
+}

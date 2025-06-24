@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/xen_npcs/houndice/beak"
+	"$surfaceprop" "Alienflesh"
+}

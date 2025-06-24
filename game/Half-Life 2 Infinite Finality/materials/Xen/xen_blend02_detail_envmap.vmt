@@ -1,0 +1,23 @@
+SDK_WorldVertexTransition
+{
+	"$basetexture2" "Xen/xen_ground02"
+	"$basetexture" "Xen/xen_ground03"
+	"$bumpmap" "Xen/xen_ground03_normal_ss"
+	"$surfaceprop" "xen"
+	"$surfaceprop2" "xen"
+	"$blendmodulatetexture" "nature/blendtexture01"
+	"%detailtype" "xen_hair"
+	"$seamless_scale" .005
+
+	
+	$ssbump			1
+	$ssbumpmathfix	1
+
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" .7
+	"$envmaptint" "[ .72 .72 .72 ]"
+	"$fresnelreflection" ".3"
+	"$envmap" "env_cubemap"
+}

@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.wonder_leads"
+    {
+      time 0.186666 1.850635
+      param "npc_alyx.wonder_leads"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookpath"
+    {
+      time 0.020000 1.840000
+      param "target_path"
+      event_ramp
+      {
+        0.3560 0.9924
+        1.4540 0.9697
+      }
+    }
+    event face "facepath"
+    {
+      time 0.066666 1.840000
+      param "target_path"
+      event_ramp
+      {
+        0.5040 0.9848
+        1.4520 0.9697
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

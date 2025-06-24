@@ -1,0 +1,143 @@
+// Choreo version 1
+event section "pause"
+{
+  time 1.514493 -1.000000
+  param "noaction"
+}
+actor "Alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.structure"
+    {
+      time 2.739130 5.702123
+      param "npc_alyx.structure"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gesture"
+    {
+      time 1.824928 4.384928
+      param "A_bg_upchindwn"
+      absolutetags playback_time
+      {
+        "apex" 0.144955
+        "extreme" 0.263554
+        "loop" 0.592997
+        "end" 0.724774
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.132530
+        "extreme" 0.240964
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "gesturearms"
+    {
+      time 3.944637 7.508986
+      param "A_g_armscrossed"
+      absolutetags playback_time
+      {
+        "in" 0.132381
+        "loop" 0.378232
+        "end" 0.614145
+        "out" 0.780136
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.155556
+        "loop" 0.444444
+        "end" 0.566667
+        "out" 0.722222
+      }
+      sequenceduration 3.033333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "face"
+    {
+      time 1.831594 7.632753
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.4280 1.0000
+          3.0340 0.5100
+          3.3480 0.5000
+          3.9620 0.4900
+          5.1380 0.5000
+        }
+        {
+        }
+        "blink" 
+        {
+        }
+        "lowerer" combo 
+        {
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+        }
+      }
+    }
+  }
+  channel "lookatactor"
+  {
+    event lookat "look at structure"
+    {
+      time 1.784928 8.045794
+      param "structure_target"
+    }
+    event face "faceatstructure"
+    {
+      time 1.808985 8.106665
+      param "structure_target"
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "moveto"
+    {
+      time 0.014493 1.688406
+      param "target_skybox_moveto"
+      param2 "Run"
+      resumecondition
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "50"
+  "CChoreoView" "92"
+}
+fps 60
+snap off
+ignorePhonemes off

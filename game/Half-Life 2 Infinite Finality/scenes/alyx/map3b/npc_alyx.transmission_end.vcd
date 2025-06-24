@@ -1,0 +1,118 @@
+// Choreo version 1
+event section "pause"
+{
+  time 6.826666 -1.000000
+  param "automate Resume 30.000000"
+}
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.have_to_go_now"
+    {
+      time 0.153333 3.878072
+      param "npc_alyx.have_to_go_now"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.cover_me_dooropen"
+    {
+      time 4.333333 6.389728
+      param "npc_alyx.cover_me_dooropen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.hang_on"
+    {
+      time 7.013333 7.788208
+      param "npc_alyx.hang_on"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookscreen"
+    {
+      time -0.013333 0.906667
+      param "target_transmission_forest"
+      event_ramp
+      {
+        0.0000 1.0000
+      }
+    }
+    event lookat "lookatconsole"
+    {
+      time 0.913333 3.886666
+      param "target_transmission_door"
+      event_ramp
+      {
+        0.4940 1.0000
+        2.3500 0.9848
+      }
+    }
+  }
+  channel "gesturer"
+  {
+    event gesture "gesture"
+    {
+      time 0.020000 3.053333
+      param "A_bg_hroll"
+      absolutetags playback_time
+      {
+        "apex" 0.111111
+        "extreme" 0.400000
+        "loop" 0.577778
+        "end" 0.688889
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.111111
+        "extreme" 0.400000
+        "loop" 0.577778
+        "end" 0.688889
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006666 6.386666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1799 0.6400
+          0.6780 0.3600
+          0.9743 0.0000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.7762 0.4600
+          0.9762 1.0000
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "106"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

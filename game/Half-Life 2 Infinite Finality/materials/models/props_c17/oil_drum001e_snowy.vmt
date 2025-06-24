@@ -1,0 +1,11 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_c17/oil_drum001e_snowy"
+	"$surfaceprop" "metal"
+	"$bumpmap" "Models/props_c17/Oil_Drum001a_normal"
+
+	"$detail" "detail\noise_detail_01"
+	"$detailscale" "5.48"
+	"$detailblendfactor" .8
+	"$detailblendmode" 0
+}

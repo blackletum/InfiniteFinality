@@ -1,0 +1,55 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "Voice"
+  {
+    event speak "alyxgate"
+    {
+      time 0.006667 1.144445
+      param "alyx\alyxgate.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "alyxemp"
+    {
+      time -0.266667 5.366666
+      param "A_EMPbig_g"
+      absolutetags playback_time
+      {
+        "apex" 0.047619
+        "loop" 0.494048
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.047619
+        "loop" 0.494048
+        "end" 0.625000
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event face "face it"
+    {
+      time 0.000000 5.360001
+      param "Alyx"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

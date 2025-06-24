@@ -1,0 +1,9 @@
+WorldVertexTransition
+{
+	"$basetexture" "nature/snow_ep3"
+	"$basetexture2" "nature/icewallep3"
+	"$surfaceprop" "Snow"
+	"$surfaceprop2" "ice"
+	"$blendmodulatetexture" "nature/blendtexture05"
+	"$seamless_scale" 0.001
+}

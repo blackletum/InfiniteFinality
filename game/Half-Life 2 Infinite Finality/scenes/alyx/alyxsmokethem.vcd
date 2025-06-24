@@ -1,0 +1,58 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "Voice"
+  {
+    event speak "alyxsmokethem"
+    {
+      time 0.313333 1.335011
+      param "alyx\alyxsmokethem.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.026667 1.986667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.1940 0.2800
+          0.3080 0.9000
+          1.3380 0.8600
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2936 0.3400
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "look at"
+    {
+      time 0.006667 2.360000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "94"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

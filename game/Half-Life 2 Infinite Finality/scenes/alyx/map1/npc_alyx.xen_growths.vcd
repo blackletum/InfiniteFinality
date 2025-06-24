@@ -1,0 +1,208 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.xen_growht01"
+    {
+      time 0.040000 4.312131
+      param "npc_alyx.xen_growht01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.xen_growht02"
+    {
+      time 4.920000 9.866009
+      param "npc_alyx.xen_growht02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.xen_growht03"
+    {
+      time 9.900000 13.088798
+      param "npc_alyx.xen_growht03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event face "facegrrowth"
+    {
+      time 0.066667 1.493333
+      param "tarrget_xen_growths"
+      event_ramp
+      {
+        0.4280 0.9773
+        0.9960 1.0000
+      }
+    }
+    event lookat "lookgrrowth"
+    {
+      time 0.013333 1.500000
+      param "tarrget_xen_growths"
+      event_ramp
+      {
+        0.4940 0.9848
+        0.9880 1.0000
+      }
+    }
+    event face "faceplayer"
+    {
+      time 1.597093 12.529570
+      param "!player"
+      event_ramp
+      {
+        0.4920 0.9773
+        10.3085 0.9697
+      }
+    }
+    event lookat "lookplayer"
+    {
+      time 1.486667 12.640000
+      param "!player"
+      event_ramp
+      {
+        0.5040 0.9697
+        10.6380 0.9848
+      }
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gesturer01"
+    {
+      time 0.106667 2.906666
+      param "A_bg_chinout"
+      absolutetags playback_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "gesture02"
+    {
+      time 3.053333 5.853333
+      param "accentdown_ext_pod"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.253012
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.253012
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "gesture03"
+    {
+      time 10.015278 12.315278
+      param "a_bg_htiltleft"
+      absolutetags playback_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.018425 13.087870
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          2.0660 0.3200
+          3.5480 0.0900
+          7.2283 0.0900
+          7.9943 0.4700
+          8.8264 0.1000
+          10.8151 0.1300
+          11.7132 0.4000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          10.8528 0.1200
+          11.7208 0.4900
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4240 0.4500
+          0.9380 0.4000
+          2.0480 0.0600
+          5.1377 0.0500
+          5.5585 0.3200
+          7.6717 0.5000
+          8.4528 0.1300
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.5021 0.2900
+          1.7896 0.1900
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "followplayer"
+    {
+      time 0.037037 13.092593
+      param "!player"
+      param2 "Run"
+      distancetotarget 80.00
+      forceshortmovement
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "RampTool" "100"
+  "ExpressionTool" "106"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+$basetexture "Concrete/concretefloor012a"
+$surfaceprop concrete
+$bumpmap "concrete/concretefloor012a_normal"
+}

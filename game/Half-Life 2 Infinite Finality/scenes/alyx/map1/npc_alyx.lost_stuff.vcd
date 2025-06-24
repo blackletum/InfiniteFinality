@@ -1,0 +1,229 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.lost_stuff"
+    {
+      time 0.033333 4.155328
+      param "npc_alyx.lost_stuff"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.finding_new_gear"
+    {
+      time 4.731482 8.598489
+      param "npc_alyx.finding_new_gear"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.get_going"
+    {
+      time 8.361115 11.388009
+      param "npc_alyx.get_going"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facelook"
+  {
+    event face "faceheli"
+    {
+      time 0.005238 4.820714
+      param "heli_face_look_point"
+      event_ramp
+      {
+        0.6660 1.0000
+        4.0920 1.0000
+      }
+    }
+    event lookat "lookattheli"
+    {
+      time 0.005953 4.833334
+      param "heli_face_look_point"
+      event_ramp
+      {
+        0.9420 1.0000
+        3.8660 1.0000
+      }
+    }
+    event lookat "lookplayer"
+    {
+      time 4.593751 11.361608
+      param "!player"
+      event_ramp
+      {
+        0.7860 1.0000
+        6.1740 1.0000
+      }
+    }
+    event face "facegordon"
+    {
+      time 4.815476 11.363095
+      param "!player"
+      event_ramp
+      {
+        0.9600 1.0000
+        5.2060 1.0000
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "armcrossed"
+    {
+      time -0.273810 5.116666
+      param "A_g_armscrossed"
+      event_ramp
+      {
+        0.4980 1.0000
+        4.7900 1.0000
+      }
+      absolutetags playback_time
+      {
+        "in" 0.087534
+        "loop" 0.250098
+        "end" 0.759116
+        "out" 0.879558
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.155556
+        "loop" 0.444444
+        "end" 0.566667
+        "out" 0.722222
+      }
+      sequenceduration 3.033333
+    }
+    event gesture "damn"
+    {
+      time 3.053572 5.353572
+      param "a_bg_htiltrt"
+      absolutetags playback_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "lotofground"
+    {
+      time 9.391666 11.875000
+      param "A_gesture11"
+      absolutetags playback_time
+      {
+        "apex" 0.184306
+        "accent" 0.288591
+        "loop" 0.483394
+        "end" 0.619343
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.230769
+        "accent" 0.384615
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time -0.008333 11.366668
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          7.4167 0.0400
+          7.7955 0.2800
+          8.6821 0.1200
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.5360 0.4800
+          1.8300 0.5100
+          4.9760 0.0000
+          5.3360 0.4800
+          6.1520 0.3000
+          7.1980 0.2800
+          7.7824 0.5200
+          8.7882 0.3000
+          9.9378 0.5500
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          4.8620 0.0000
+          5.3140 0.5000
+          6.9440 0.2400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          3.4480 0.0000
+          3.7640 0.7400
+          4.5820 0.4900
+          5.4600 0.0000
+          9.0824 0.2600
+          9.9123 0.6400
+        }
+        {
+        }
+        "wrinkler" 
+        {
+        }
+        "corner_puller" combo 
+        {
+          5.0796 0.0000
+          5.3088 0.5500
+          6.4396 0.1100
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "goto"
+  {
+    event moveto "movto"
+    {
+      time 0.018519 9.342593
+      param "alyx_crash_walkto"
+      param2 "Walk"
+    }
+  }
+  channel "gestures"
+  {
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "104"
+  "CChoreoView" "60"
+}
+fps 60
+snap off
+ignorePhonemes off

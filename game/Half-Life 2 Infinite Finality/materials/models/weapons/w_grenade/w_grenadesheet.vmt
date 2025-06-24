@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$baseTexture" "models/items/W_grenadesheet"
+	"$model" 1
+}

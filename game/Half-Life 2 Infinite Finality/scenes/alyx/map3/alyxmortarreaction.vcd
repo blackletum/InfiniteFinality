@@ -1,0 +1,140 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "sound"
+  {
+    event speak "npc_alyx.supression_device01"
+    {
+      time 0.060000 3.470998
+      param "npc_alyx.supression_device01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.supression_device02"
+    {
+      time 3.546666 7.024738
+      param "npc_alyx.supression_device02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.046667 4.173333
+      param "!player"
+    }
+    event lookat "lookatmortar"
+    {
+      time 3.746666 6.433333
+      param "mortartarget"
+    }
+    event face "facemortar"
+    {
+      time 3.806666 6.120000
+      param "mortartarget"
+    }
+  }
+  channel "gestures"
+  {
+  }
+  channel "flex"
+  {
+    event flexanimation "face"
+    {
+      time 0.000000 7.053333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          2.7145 0.1500
+          2.7636 1.0000
+          2.8364 0.1100
+          4.3732 0.3000
+          4.6143 0.1900
+          4.6982 0.0800
+          4.7393 0.9500
+          4.8000 0.1000
+        }
+        "outer_raiser" combo 
+        {
+          0.3461 0.2800
+          0.9453 0.3100
+          2.3118 0.2000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          4.3057 0.4200
+          4.6736 0.7900
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          4.0214 0.0900
+          4.5304 0.7600
+          6.1054 0.1000
+        }
+        "corner_puller" combo 
+        {
+          0.1429 0.7100
+          0.5039 0.8900
+          1.4521 0.0300
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          4.0482 0.0900
+          4.4214 0.6200
+          5.2500 0.0900
+        }
+        {
+        }
+        "chin_raiser" 
+        {
+          4.4357 0.1600
+          4.8571 0.8300
+        }
+        "dimpler" combo 
+        {
+          6.9848 0.1400
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+        }
+      }
+    }
+  }
+  channel "followfreeman"
+  {
+    event moveto "follow"
+    {
+      time 0.006667 7.026667
+      param "!player"
+      param2 "Walk"
+      distancetotarget 75.00
+      forceshortmovement
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "102"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "mat_hiperborea/map4/comms_board"
+	"$surfaceprop" "Plastic"
+}

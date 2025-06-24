@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/supply_crate01_blue"
+	"$surfaceprop" "Plastic"
+}

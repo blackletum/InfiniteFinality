@@ -1,0 +1,91 @@
+// Choreo version 1
+event section "pause"
+{
+  time 1.280000 -1.000000
+  param "noaction"
+}
+event loop "loop"
+{
+  time 9.200000 -1.000000
+  param "8.600000"
+  loopcount "-1"
+}
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.ladder"
+    {
+      time 1.686667 8.497687
+      param "npc_alyx.ladder"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetoscript"
+    {
+      time 0.006667 1.446667
+      param "test"
+      param2 "Walk"
+      resumecondition
+    }
+    event moveto "movenearladder"
+    {
+      time 4.000000 9.373334
+      param "target_nearladder"
+      param2 "Walk"
+      resumecondition
+    }
+  }
+  channel "firetrigger"
+  {
+    event firetrigger "trigger1"
+    {
+      time 1.460000 -1.000000
+      param "1"
+    }
+  }
+  channel "facelookat"
+  {
+    event lookat "lookatcliff"
+    {
+      time 0.220001 1.866667
+      param "target_cliff"
+      event_ramp
+      {
+        0.4920 0.9545
+        1.2160 0.8939
+      }
+    }
+    event lookat "lookatladder"
+    {
+      time 3.286667 9.380000
+      param "target_ladder"
+      event_ramp
+      {
+        0.4900 0.9924
+        6.0933 1.0000
+      }
+    }
+    event face "faceladder"
+    {
+      time 3.820000 9.373334
+      param "target_ladder"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

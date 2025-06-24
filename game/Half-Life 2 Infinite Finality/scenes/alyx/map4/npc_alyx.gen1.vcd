@@ -1,0 +1,159 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.these_generators"
+    {
+      time 0.066666 2.780657
+      param "npc_alyx.these_generators"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.power_to_gate"
+    {
+      time 2.866667 7.524672
+      param "npc_alyx.power_to_gate"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.cower_me_while_work"
+    {
+      time 7.613334 8.868368
+      param "npc_alyx.cower_me_while_work"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "mmovetoscript"
+    {
+      time 0.360000 8.833333
+      param "alyx_gotoshotgun"
+      param2 "Walk"
+      distancetotarget 70.00
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture01"
+    {
+      time 0.273333 3.106667
+      param "A_g_leftsweepoutbig"
+      absolutetags playback_time
+      {
+        "apex" 0.119048
+        "accent" 0.452381
+        "loop" 0.571429
+        "end" 0.714286
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.119048
+        "accent" 0.452381
+        "loop" 0.571429
+        "end" 0.714286
+      }
+      sequenceduration 2.833333
+    }
+    event gesture "gesture02"
+    {
+      time 3.420000 5.720001
+      param "a_bg_htiltleft"
+      absolutetags playback_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookatgenerator"
+    {
+      time 0.086667 2.993334
+      param "target_gen1"
+      event_ramp
+      {
+        0.4260 0.8712
+        2.2180 0.9394
+      }
+    }
+    event face "facegenerator"
+    {
+      time 0.386666 3.273333
+      param "target_gen1"
+      event_ramp
+      {
+        0.3920 0.2576
+        2.2500 0.3409
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.040000 8.826667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.1712 0.2300
+          3.4442 0.4800
+          4.0712 0.4200
+          6.0157 0.1000
+          6.3647 0.3300
+          6.6922 0.5100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4362 0.3300
+          0.6978 0.7000
+          1.5805 0.6800
+          6.2078 0.5300
+          6.7098 0.6200
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          3.0963 0.1100
+          3.4654 0.2600
+          4.1943 0.2200
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "102"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

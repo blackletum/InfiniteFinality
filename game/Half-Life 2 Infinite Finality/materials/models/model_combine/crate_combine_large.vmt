@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_combine/crate_combine_large"	
+	"$surfaceprop" "metal"
+	"%keywords" "combine"
+	"$envmaptint" "[ .5 .7 .9 ]"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/model_combine/crate_combine_large_m"	
+	"$selfillum" "1"
+}

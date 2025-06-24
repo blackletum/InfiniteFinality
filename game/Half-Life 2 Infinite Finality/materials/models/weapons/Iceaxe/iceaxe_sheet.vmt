@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models\weapons\Iceaxe\iceaxe_sheet"
+	"$bumpmap" "models\weapons\Iceaxe\iceaxe_sheet_normal"
+}

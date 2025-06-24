@@ -1,0 +1,102 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.rockfall"
+    {
+      time 0.200000 1.949342
+      param "npc_alyx.rockfall"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gesturre01"
+    {
+      time 0.080000 3.040000
+      param "g_DangerFromAbove_02"
+      absolutetags playback_time
+      {
+        "apex" 0.248311
+        "accent" 0.294294
+        "loop" 0.490991
+        "end" 0.734234
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.333333
+        "loop" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "lookatfaceat"
+  {
+    event lookat "lookboulder"
+    {
+      time 0.033334 3.526667
+      param "boulder_rock04"
+      event_ramp
+      {
+        0.4760 0.9621
+        2.9200 1.0000
+      }
+    }
+    event face "faceplayer"
+    {
+      time 0.219999 3.473332
+      param "!player"
+    }
+  }
+  channel "followfreeman"
+  {
+    event moveto "follow"
+    {
+      time 2.000000 3.546666
+      param "!player"
+      param2 "Run"
+      distancetotarget 70.00
+      forceshortmovement
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006666 3.553333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2960 0.6900
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.2800 0.2500
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

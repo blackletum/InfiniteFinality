@@ -1,0 +1,13 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/Weapons/v_iceaxe/iceaxe_sheet"
+	"$bumpmap" "models/weapons/Iceaxe/iceaxe_sheet_normal"
+
+	"$phong" "1"
+	"$phongexponent" "500"
+	"$phongboost" "7"
+	"$phongfresnelranges"	"[2 .5 .5]"
+	"$phongalbedotint" "1"
+
+
+}

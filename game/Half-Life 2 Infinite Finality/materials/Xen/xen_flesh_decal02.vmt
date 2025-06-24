@@ -1,0 +1,11 @@
+"SDK_LightmappedGeneric"
+{
+	"$basetexture" "Xen/xen_flesh_decal02"
+	"$surfaceprop" "Slime"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "0.250"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+
+}

@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.dynamite02"
+    {
+      time 0.433333 4.016258
+      param "npc_alyx.dynamite02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookplayer"
+    {
+      time 0.080000 3.966667
+      param "!player"
+    }
+    event face "faceplayer"
+    {
+      time 0.120000 3.993334
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "posture"
+    {
+      time 0.113334 3.633334
+      param "p_CitadelShake_02b"
+      absolutetags playback_time
+      {
+        "apex" 0.083333
+        "loop" 0.373106
+        "end" 0.721591
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.200000
+        "loop" 0.500000
+        "end" 0.666667
+      }
+      sequenceduration 1.033333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006667 4.013333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.4842 0.3571
+          2.0596 0.5238
+          3.0912 0.5119
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4835 0.5800
+          1.4737 0.4900
+          3.0965 0.5100
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.5036 0.4900
+          1.3168 0.5100
+          2.3377 0.4800
+          3.1755 0.4900
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "114"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

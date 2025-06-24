@@ -1,0 +1,9 @@
+SDK_VertexLitGeneric
+{
+    "$baseTexture" "models/Combine_soldier/corpse_head"
+	"$bumpmap" "models/combine_soldier/corpse_head_n"
+	
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+}

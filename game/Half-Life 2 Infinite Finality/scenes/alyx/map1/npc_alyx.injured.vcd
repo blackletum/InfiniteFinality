@@ -1,0 +1,156 @@
+// Choreo version 1
+event section "pause"
+{
+  time 5.113333 -1.000000
+  param "automate Resume 7.000000"
+}
+actor "alyx"
+{
+  channel "gestures"
+  {
+    event gesture "ppain"
+    {
+      time 2.436463 5.825700
+      param "A_g_pain_side"
+      absolutetags playback_time
+      {
+        "apex" 0.214567
+        "accent" 0.427540
+        "loop" 0.575590
+        "end" 0.871690
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.089744
+        "accent" 0.256410
+        "loop" 0.448718
+        "end" 0.833333
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "rubface"
+    {
+      time 0.006668 2.906668
+      param "A_g_rubface"
+      absolutetags playback_time
+      {
+        "in" 0.104651
+        "out" 0.767442
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.104651
+        "out" 0.767442
+      }
+      sequenceduration 2.900000
+    }
+    event gesture "gesture02"
+    {
+      time 5.386668 8.186668
+      param "accentdown_ext"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.253012
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.253012
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetopoint"
+    {
+      time 2.573334 5.438363
+      param "!player"
+      param2 "Walk"
+      distancetotarget 70.00
+      forceshortmovement
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.053333 8.793333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.4000 0.1700
+          0.9660 1.0000
+          1.6358 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          5.8750 0.0500
+          6.3929 0.6800
+          8.2661 0.2100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2446 0.5400
+          0.8518 0.7800
+          1.7179 0.5500
+          4.6536 0.6400
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.2264 0.5400
+          1.4925 0.4600
+          1.7736 0.4100
+          2.4906 0.4800
+        }
+        {
+        }
+        "bite" 
+        {
+          1.2132 0.1400
+          1.4547 0.8900
+          1.9453 0.3200
+          2.2660 0.2000
+          2.4906 0.8800
+          3.7811 0.2600
+        }
+      }
+    }
+  }
+  channel "faceactor"
+  {
+    event face "faceplayer"
+    {
+      time 3.120000 8.393333
+      param "!player"
+      event_ramp
+      {
+        0.5800 1.0000
+        4.0060 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "112"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

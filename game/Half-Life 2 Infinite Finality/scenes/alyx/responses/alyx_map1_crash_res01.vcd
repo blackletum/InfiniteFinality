@@ -1,0 +1,127 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "audio"
+  {
+    event speak "al_rbed_giveupnow01"
+    {
+      time 0.152778 1.914955
+      param "ep_02.al_rbed_plususe01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "look at player"
+    {
+      time 0.080000 2.130833
+      param "!player"
+      event_ramp
+      {
+        0.1211 0.3204 "curve_bspline_to_curve_bspline"
+        0.5838 0.5525 "curve_bspline_to_curve_bspline"
+        1.2185 0.5580 "curve_bspline_to_curve_bspline"
+        1.8563 0.3481 "curve_bspline_to_curve_bspline"
+      }
+    }
+  }
+  channel "move to"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "gest"
+    {
+      time -0.027778 3.122222
+      param "A_hairbrush"
+      absolutetags playback_time
+      {
+        "apex" 0.108168
+        "accent" 0.291391
+        "loop" 0.598234
+        "end" 0.602649
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072289
+        "accent" 0.192771
+        "loop" 0.777108
+        "end" 0.831325
+      }
+      sequenceduration 5.566667
+    }
+  }
+  channel "postures"
+  {
+  }
+  channel "facial flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006945 3.111111
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2463 0.3300
+          0.8352 0.7600
+          1.2630 0.7700
+          1.6315 0.6800
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.6123 1.0000
+        }
+        {
+        }
+        "dilator" 
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.6605 0.4400
+        }
+        {
+        }
+        "funneler" combo range 0.0 2.0 
+        {
+        }
+        {
+        }
+        "stretcher" combo 
+        {
+        }
+        {
+        }
+        "dimpler" combo 
+        {
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2360 0.3500
+          0.7160 0.0000
+          1.5200 0.0900
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "98"
+  "ExpressionTool" "104"
+  "CChoreoView" "96"
+}
+fps 60
+snap off
+ignorePhonemes off

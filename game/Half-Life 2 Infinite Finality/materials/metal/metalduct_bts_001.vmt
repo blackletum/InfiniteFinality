@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "Props/metalduct004a"
+	"$surfaceprop" "metalvent"
+	"%noportal" 1
+}

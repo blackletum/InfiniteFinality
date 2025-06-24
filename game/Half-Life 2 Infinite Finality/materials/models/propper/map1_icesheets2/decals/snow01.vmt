@@ -1,0 +1,8 @@
+"SDK_VertexLitGeneric"
+{
+	"$basetexture"		"decals\snow01"
+	$alphatest				1
+	$alphatestreference		0.01
+	$allowalphatocoverage	1
+	"$model"		"1"
+}

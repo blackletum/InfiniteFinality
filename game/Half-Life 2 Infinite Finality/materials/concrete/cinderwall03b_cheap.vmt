@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+$baseTexture "concrete/cinderwall03b"
+$surfaceprop concrete
+}

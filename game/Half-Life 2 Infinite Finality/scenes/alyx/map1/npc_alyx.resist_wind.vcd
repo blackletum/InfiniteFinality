@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "gesture"
+  {
+    event gesture "posture"
+    {
+      time 0.066667 10.006667
+      param "A_P_exposreact_ng"
+      absolutetags playback_time
+      {
+        "apex" 0.044229
+        "loop" 0.194372
+        "end" 0.696953
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.100000
+        "loop" 0.371429
+        "end" 0.485714
+      }
+      sequenceduration 2.366667
+    }
+  }
+  channel "faceat"
+  {
+    event face "facewind"
+    {
+      time 0.193333 9.846667
+      param "target_wind"
+      event_ramp
+      {
+        0.5000 0.9773
+        8.9047 0.9773
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

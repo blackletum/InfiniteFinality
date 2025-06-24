@@ -1,0 +1,7 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture"	"mat_hiperborea/road_snowdecal"
+ 	"$decal" 1
+	"$decalscale" 0.15
+	"$translucent" 1
+}

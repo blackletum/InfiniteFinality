@@ -1,0 +1,12 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"Metal/metalcombine001"
+	"%keywords"		"combine"
+	"$nodiffusebumplighting"		"1"
+	"$envmaptint"		"[ .56 .67 .75 ]"
+	"$envmap"		"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+	"$envmapcontrast"		"1"
+	"$envmapsaturation"		"1"
+	"$model"		"1"
+}

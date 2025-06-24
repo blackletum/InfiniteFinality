@@ -1,0 +1,105 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.cabin"
+    {
+      time 0.586667 4.418481
+      param "npc_alyx.cabin"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookandface"
+  {
+    event lookat "lookcabin"
+    {
+      time 0.006666 1.006666
+      param "cabin_checkout03"
+      event_ramp
+      {
+        0.3280 0.9545
+      }
+    }
+    event face "facecabin"
+    {
+      time 0.513333 4.520000
+      param "cabin_checkout02"
+    }
+    event lookat "lookplayer"
+    {
+      time 2.153333 4.633334
+      param "!player"
+    }
+    event lookat "lookcabin2"
+    {
+      time 0.633334 1.780000
+      param "cabin_checkout01"
+    }
+    event lookat "lookcabin3"
+    {
+      time 1.380000 2.460000
+      param "cabin_checkout02"
+      event_ramp
+      {
+        0.4720 0.9470
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.013334 4.986667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          2.5140 0.0000
+          3.2300 0.4700
+          4.8399 0.0000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2240 0.4500
+          1.9940 0.4600
+          2.5040 0.0000
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          2.4067 0.0000
+          3.4622 0.6600
+        }
+        "upper_raiser" combo 
+        {
+          0.4204 0.3100
+        }
+        {
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.4821 0.2200
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "90"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,143 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "sound"
+  {
+    event speak "npc_alyx.what_else_here01"
+    {
+      time 0.012821 3.572821
+      param "npc_alyx.what_else_here01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.what_else_here02"
+    {
+      time 3.608975 7.552875
+      param "npc_alyx.what_else_here02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.020000 7.133334
+      param "!player"
+    }
+    event face "faceplayer"
+    {
+      time 0.086666 7.119999
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "talking"
+    {
+      time 0.126667 2.926667
+      param "A_bg_acc_dwn_left"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.301205
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+    }
+    event gesture "talikng2"
+    {
+      time 3.433333 6.233334
+      param "A_bg_acc_dwn_rt"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "fllex"
+    {
+      time 0.059487 7.130001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          1.4208 0.0800
+          1.4660 0.9100
+          1.5264 0.1000
+          3.8717 0.0700
+          3.9245 0.9700
+          3.9868 0.0900
+        }
+        "outer_raiser" combo 
+        {
+          3.0560 0.0300
+          3.3300 0.4200
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.1480 0.4900
+          4.7680 0.2900
+          5.1760 0.5200
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          5.7151 0.4300
+          6.0038 0.8800
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "follow"
+  {
+    event moveto "followplayer"
+    {
+      time 0.000000 7.544872
+      param "!player"
+      param2 "Walk"
+      distancetotarget 75.00
+      forceshortmovement
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "104"
+  "RampTool" "86"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

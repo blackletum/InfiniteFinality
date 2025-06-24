@@ -1,0 +1,7 @@
+"SDK_LightmappedGeneric"
+{
+	"$basetexture" "Decals/decalmetalvent004a"
+	"$decalscale" 0.25
+	"$translucent" 1
+	"%keywords" "airexchange,c17industrial"
+}

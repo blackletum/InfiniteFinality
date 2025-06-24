@@ -1,0 +1,111 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.puzzle_beat_fail"
+    {
+      time 0.100000 3.169297
+      param "npc_alyx.puzzle_beat_fail"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facelookactorr"
+  {
+    event lookat "lookgordon"
+    {
+      time 1.380000 3.166666
+      param "!player"
+      event_ramp
+      {
+        0.4960 0.9924
+        1.5120 1.0000
+      }
+    }
+    event lookat "lookwreck"
+    {
+      time 0.066666 1.373333
+      param "shipwreck"
+      event_ramp
+      {
+        0.5060 0.9621
+        0.8620 1.0000
+      }
+    }
+    event face "facegordon"
+    {
+      time 0.020000 3.213334
+      param "!player"
+      event_ramp
+      {
+        0.5020 0.9621
+        2.4960 0.9848
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture01"
+    {
+      time 0.013334 2.713334
+      param "A_gesture13p"
+      absolutetags playback_time
+      {
+        "apex" 0.150000
+        "accent" 0.300000
+        "loop" 0.475000
+        "end" 0.650000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.300000
+        "loop" 0.475000
+        "end" 0.650000
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 3.213334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.7992 0.5500
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.8087 0.4300
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.8181 0.5600
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "106"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

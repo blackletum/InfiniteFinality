@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "Sound"
+  {
+    event speak "npc_alyx.bunkers_grenade"
+    {
+      time 0.371015 5.283328
+      param "npc_alyx.bunkers_grenade"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "faceat"
+  {
+    event face "facegordon"
+    {
+      time 0.236072 5.611559
+      param "!player"
+    }
+    event lookat "lookatgordon"
+    {
+      time 0.492321 5.453145
+      param "!player"
+    }
+  }
+  channel "felx"
+  {
+    event flexanimation "flex"
+    {
+      time 0.020000 5.580000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.2980 0.7600
+          1.2160 0.8400
+          4.7460 0.7800
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

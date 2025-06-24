@@ -1,0 +1,162 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.ropeladder"
+    {
+      time 0.306667 4.627665
+      param "npc_alyx.ropeladder"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.ropeladder_resistance"
+    {
+      time 4.686666 8.667301
+      param "npc_alyx.ropeladder_resistance"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookatfaceat"
+  {
+    event lookat "lookladder"
+    {
+      time 0.100000 3.100000
+      param "lookat_ladder"
+      event_ramp
+      {
+        0.6940 1.0000
+        2.3320 1.0000
+      }
+    }
+    event lookat "lookgordon"
+    {
+      time 3.100000 9.340001
+      param "!player"
+      event_ramp
+      {
+        0.8640 1.0000
+        4.9160 1.0000
+      }
+    }
+    event face "faceladder"
+    {
+      time 0.293333 3.006666
+      param "lookat_ladder"
+      event_ramp
+      {
+        0.5380 1.0000
+        2.1440 1.0000
+      }
+    }
+    event face "facegordon"
+    {
+      time 3.000000 9.039999
+      param "!player"
+      event_ramp
+      {
+        0.6500 1.0000
+        5.3480 1.0000
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture01"
+    {
+      time 7.319998 10.119999
+      param "A_bg_acc_dwn_rt"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "gesture02"
+    {
+      time 5.026668 7.326668
+      param "a_bg_htiltleft"
+      absolutetags playback_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.005747 10.390805
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.2027 0.0700
+          3.5993 0.2200
+          5.3203 0.0500
+          5.7339 0.3300
+          7.2355 0.1000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          2.9983 0.0800
+          3.5949 0.1500
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.7228 0.3600
+          2.2123 0.5200
+          2.9070 0.0000
+        }
+        {
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.5720 0.2500
+          2.2620 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "124"
+  "CChoreoView" "112"
+}
+fps 60
+snap off
+ignorePhonemes off

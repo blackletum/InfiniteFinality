@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_house/balcony_wood02"
+	"$normalmap" "models/model_house/balcony_wood01_normal"
+	"$surfaceprop" "Wood_Solid"
+}

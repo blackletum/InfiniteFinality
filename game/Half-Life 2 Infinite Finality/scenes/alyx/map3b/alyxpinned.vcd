@@ -1,0 +1,150 @@
+// Choreo version 1
+event section "pause"
+{
+  time 3.434783 -1.000000
+  param "noaction"
+}
+actor "Alyx"
+{
+  channel "Sound"
+  {
+    event speak "npc_alyx.bunkers_grenade"
+    {
+      time 4.804348 9.716661
+      param "npc_alyx.bunkers_grenade"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    active "0"
+  }
+  channel "run_to"
+  {
+    event moveto "run_to_cover"
+    {
+      time 0.046666 3.733332
+      param "alyx_arena_cover"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gordonhelp"
+    {
+      time 6.528769 9.495436
+      param "A_bg_embarassed"
+      absolutetags playback_time
+      {
+        "apex" 0.136364
+        "extreme" 0.329545
+        "loop" 0.454545
+        "end" 0.568182
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.136364
+        "extreme" 0.329545
+        "loop" 0.454545
+        "end" 0.568182
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "chinout"
+    {
+      time 4.166667 6.966667
+      param "A_bg_chinout_pod"
+      absolutetags playback_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "faceat"
+  {
+    event face "facegordon"
+    {
+      time 3.949405 10.898226
+      param "!player"
+    }
+    event lookat "lookatgordon"
+    {
+      time 5.938988 10.899812
+      param "!player"
+    }
+    event lookat "lookatgordon"
+    {
+      time 0.506890 4.341572
+      param "!player"
+    }
+    event face "facegordon"
+    {
+      time 0.456651 2.521414
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.016666 10.880919
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.7359 0.2200
+          0.8256 1.0000
+          0.8872 0.1400
+          4.3923 0.3000
+          4.4769 0.9700
+          4.5333 0.1800
+          8.0179 0.1600
+          8.0590 0.9700
+          8.2436 0.2200
+        }
+        "lowerer" combo 
+        {
+          0.2600 1.0000
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          1.9212 0.1700
+          2.6818 1.0000
+          4.0030 0.1700
+        }
+        "corner_depressor" combo 
+        {
+          0.8560 1.0000
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "92"
+  "ExpressionTool" "66"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

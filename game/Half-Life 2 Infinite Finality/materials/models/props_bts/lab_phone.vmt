@@ -1,0 +1,12 @@
+SDK_VertexLitGeneric
+{
+	"$baseTexture" "models\props_bts/lab_phone"
+	"envmap" "env_cubemap"
+  	"$model"	1
+
+
+
+
+
+
+}

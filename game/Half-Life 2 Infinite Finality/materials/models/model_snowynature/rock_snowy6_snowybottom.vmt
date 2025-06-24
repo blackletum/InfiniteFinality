@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_snowynature/rock_snowy6_snowybottom"
+	"$bumpmap"	"models/model_snowynature/rock_snowy6_snowybottom_normal"
+}

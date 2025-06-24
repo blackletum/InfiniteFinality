@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "nature/rockwall_cave01_dark"
+	"$bumpmap" "nature/rockwall_cave01_dark_normal"
+	"$surfaceprop" "Rock"
+}

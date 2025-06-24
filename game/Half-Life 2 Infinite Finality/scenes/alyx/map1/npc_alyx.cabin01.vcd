@@ -1,0 +1,130 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.cabin01"
+    {
+      time 0.966667 1.873220
+      param "npc_alyx.cabin01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookatfaceat"
+  {
+    event lookat "lookatacabin"
+    {
+      time 0.020000 2.506666
+      param "cabin_lookat"
+    }
+    event lookat "lookatplayer"
+    {
+      time 2.260000 4.506668
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 5.013333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.5173 0.0000
+          2.0577 0.4000
+        }
+        {
+          2.3692 0.1200
+        }
+        "outer_raiser" combo 
+        {
+          1.0250 0.1200
+          1.8712 0.2400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.9077 0.2500
+          1.7442 0.0600
+          2.0942 0.5300
+          3.3673 0.0600
+        }
+        {
+          2.0942 0.7700
+        }
+        "upper_raiser" combo 
+        {
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          1.8581 0.4200
+        }
+        {
+        }
+        "tightener" 
+        {
+          0.9163 0.1800
+          1.8293 0.6500
+        }
+        "jaw_clencher" 
+        {
+        }
+        "jaw_drop" range 0.0 2.0 
+        {
+        }
+        "mouth_drop" combo 
+        {
+        }
+        {
+        }
+        "dimpler" combo 
+        {
+        }
+        {
+        }
+        "jaw_sideways" range -1.0 1.0 
+        {
+        }
+        "lower_lip" 
+        {
+        }
+      }
+    }
+  }
+  channel "followplayer"
+  {
+    event moveto "followfreeman"
+    {
+      time -0.013333 5.013333
+      param "!player"
+      param2 "Run"
+      distancetotarget 75.00
+      forceshortmovement
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "96"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

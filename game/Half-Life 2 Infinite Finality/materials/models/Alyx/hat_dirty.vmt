@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/Alyx/hat_dirty"
+	"$bumpmap"  "models/Alyx/Hat_normal"
+}

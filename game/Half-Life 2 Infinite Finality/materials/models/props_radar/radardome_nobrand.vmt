@@ -1,0 +1,26 @@
+VertexlitGeneric
+{
+	$basetexture "models/props_radar/radardome01_nobrand"
+	$bumpmap "models/props_radar/radardome01_normal"
+	$surfaceprop MetalPanel
+//SPECULAR
+	$envmap "env_cubemap"
+//No normal map needed because of phong shader
+//	$normalmapalphaenvmapmask 1
+//	$normalmap "models/props_radar/radardome01_normal"
+//	$model 1
+
+//PHONG SHADERS
+	$phong 5
+	$phongexponent 10
+	$phongboost 1
+	$phongalbedotint 1
+	$phongfresnelranges "[0.3 .6 4]"
+//	BMAPM is commented out because model won't use bumpmap if this is enabled.
+//	TODO: Transfer basetexture alpha channel to bumpmap... But it seems to work as is and I have no idea why...
+//	SEE: $basemapalphaphongmask entry warnings on Valve Dev Wiki
+//	$BaseMapAlphaPhongMask 1
+	
+	//Old fresnel range
+//	$phongfresnelranges "[0.05 0.5 1]"
+}

@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture"	"plaster/plasterwall017b_snow"
+	"$surfaceprop" "concrete"
+}

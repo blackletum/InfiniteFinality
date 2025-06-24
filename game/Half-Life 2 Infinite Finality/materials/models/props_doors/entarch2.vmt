@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$baseTexture" "models/props_doors/entarch2"
+	"$surfaceprop" "concrete"
+//	"$bumpmap" "models/props_doors/entarch2_normal"
+}

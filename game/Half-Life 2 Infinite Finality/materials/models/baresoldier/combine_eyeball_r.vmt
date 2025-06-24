@@ -1,0 +1,6 @@
+SDK_Eyes
+{
+	"$basetexture" "models/baresoldier/combine_eyeball_r"
+	"$iris" "models/baresoldier/combine_pupil_r"
+	"$halflambert" 1
+}

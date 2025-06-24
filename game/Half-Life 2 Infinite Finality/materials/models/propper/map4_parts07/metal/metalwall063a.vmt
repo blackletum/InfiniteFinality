@@ -1,0 +1,16 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"Metal/metalwall063a"
+	"$detail"		"detail\metal_detail_01"
+	"$detailscale"		"4.283000"
+	"$detailblendfactor"		"0.800000"
+	"$detailblendmode"		"0"
+	"%keywords"		"combine"
+	"$nodiffusebumplighting"		"1"
+	"$envmaptint"		"[ .56 .56 .75 ]"
+	"$envmap"		"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+	"$envmapcontrast"		"1"
+	"$envmapsaturation"		"1"
+	"$model"		"1"
+}

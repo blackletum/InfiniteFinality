@@ -1,0 +1,6 @@
+SDK_DecalModulate
+{
+$basetexture "Decals/manhackcut3"
+$decalscale 0.40
+$translucent 1
+}

@@ -1,0 +1,7 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/ladder_glacier"
+	"$bumpmap" "models/model_hiperborea/ladder_glacier_norrmal"
+	"$detail" "detail/metal_detail_01"
+	"$surfaceprop" "Ladder"
+}

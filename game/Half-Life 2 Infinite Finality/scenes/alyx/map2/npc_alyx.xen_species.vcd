@@ -1,0 +1,165 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.stories"
+    {
+      time 0.086667 2.591678
+      param "npc_alyx.stories"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.combine_job"
+    {
+      time 2.666667 7.350658
+      param "npc_alyx.combine_job"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.dangers_lurk"
+    {
+      time 7.413333 10.025918
+      param "npc_alyx.dangers_lurk"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "followplayer"
+    {
+      time 0.006667 10.106668
+      param "!player"
+      param2 "Run"
+      distancetotarget 71.00
+      forceshortmovement
+    }
+  }
+  channel "facelookactor"
+  {
+    event lookat "lookplayer"
+    {
+      time 0.006667 10.080001
+      param "!player"
+    }
+    event face "faceplayer"
+    {
+      time 0.013333 10.080000
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 2.973333 5.773333
+      param "A_bg_acc_dwn_left"
+      absolutetags playback_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.144578
+        "extreme" 0.204819
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "2"
+    {
+      time 4.986666 7.753333
+      param "A_g_cutdwnoutbig"
+      absolutetags playback_time
+      {
+        "apex" 0.121951
+        "accent" 0.341463
+        "loop" 0.597561
+        "end" 0.658537
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.341463
+        "loop" 0.597561
+        "end" 0.658537
+      }
+      sequenceduration 2.766667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006667 10.093332
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.8956 0.2800
+          1.8525 0.0700
+          5.1922 0.0300
+          5.9118 0.3900
+          6.9078 0.2200
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.6133 0.1300
+          1.2388 0.1200
+          5.1961 0.0900
+          5.9275 0.2900
+          6.9706 0.1900
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          2.8784 0.0500
+          3.4647 0.2800
+          4.7314 0.1100
+          7.5593 0.0500
+          8.1113 0.5300
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          7.4974 0.0800
+          8.0765 0.3400
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          7.5100 0.0500
+          8.1078 0.2100
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "88"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

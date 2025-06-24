@@ -1,0 +1,7 @@
+SDK_LightmappedGeneric
+{
+	"$baseTexture" "stone/stonefloor002b_snow"
+	"%keywords" "dod"
+	"$surfaceprop" "brick"
+	"$lightwarptexture" "ground\snow_warp"
+}

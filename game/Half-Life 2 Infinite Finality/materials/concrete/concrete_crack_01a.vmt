@@ -1,0 +1,8 @@
+SDK_LightmappedGeneric
+{
+$decal 1
+$basetexture "Concrete/concrete_crack_01a"
+$surfaceprop concrete
+$translucent 1
+"%keywords" "c17sewers,wasteland"
+}

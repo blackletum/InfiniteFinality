@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+$baseTexture "concrete/ceilingbeams01"
+$surfaceprop concrete
+}

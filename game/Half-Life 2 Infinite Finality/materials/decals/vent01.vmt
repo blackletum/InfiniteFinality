@@ -1,0 +1,9 @@
+SDK_LightmappedGeneric
+{
+$basetexture "decals\vent01"
+$translucent 1
+$decal 1
+$decalscale "0.50"
+$vertexcolor 1
+$vertexalpha 1
+}

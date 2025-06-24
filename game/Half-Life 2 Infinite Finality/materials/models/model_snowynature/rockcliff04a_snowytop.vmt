@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_snowynature/rockcliff04a_snowytop"
+	"$surfaceprop" "Rock"
+}

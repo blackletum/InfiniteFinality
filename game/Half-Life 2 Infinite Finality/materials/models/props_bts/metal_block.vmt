@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	"$baseTexture" "models\props_bts/metal_block"
+	"envmap" "env_cubemap"
+
+
+
+
+
+}

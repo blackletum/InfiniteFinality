@@ -1,0 +1,114 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 4.146667 -1.000000
+  param "0.500000"
+  loopcount "-1"
+}
+actor "alyx"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.000000 5.006667
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 5.013333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          2.7826 0.0000
+          2.9601 1.0000
+          4.2123 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          0.0220 0.5700
+          0.0640 0.5800
+          0.1420 0.6400
+          0.3120 0.7200
+          1.1860 0.8300
+          3.1100 0.7700
+          4.6300 0.5000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.0100 0.4100
+          0.0320 0.4900
+          0.0460 0.4900
+          0.0980 0.4900
+          0.2500 0.4900
+          1.5680 0.4800
+          2.4118 0.6300
+          2.9440 1.0000
+          4.1700 0.4900
+          5.0133 0.4900
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          2.2111 0.0000
+          2.9630 1.0000
+          4.5185 0.0000
+        }
+        "corner_puller" combo 
+        {
+          2.1685 0.0000
+          2.9611 1.0000
+          4.5130 0.0000
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.0000 0.5600
+          0.4040 0.7100
+          0.8340 0.7300
+          2.0580 0.6400
+          2.9574 1.0000
+          3.6560 0.6600
+          4.4820 0.6300
+          4.7960 0.6000
+          4.9307 0.5400
+          5.0133 0.5100
+        }
+        {
+        }
+        "chin_raiser" 
+        {
+          2.4383 0.1324
+          2.9457 0.7059
+          4.5074 0.0000
+        }
+        "stretcher" combo 
+        {
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "118"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

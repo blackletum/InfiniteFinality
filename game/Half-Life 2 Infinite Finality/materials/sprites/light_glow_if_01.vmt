@@ -1,0 +1,7 @@
+SDK_Sprite
+{
+	"$basetexture" "sprites/light_glow_if_01"
+	$nosrgb 1
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+}

@@ -1,0 +1,151 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "gesture"
+  {
+    event gesture "shake"
+    {
+      time 0.066667 3.006666
+      param "A_bg_shaking"
+      absolutetags playback_time
+      {
+        "apex" 0.115333
+        "extreme" 0.358277
+        "loop" 0.562358
+        "end" 0.825397
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "extreme" 0.344828
+        "loop" 0.603448
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+    event lookat "lookatgorrdon"
+    {
+      time 0.033333 5.146667
+      param "!player"
+      event_ramp
+      {
+        0.5720 1.0000
+        4.4480 1.0000
+      }
+    }
+    event face "facegordon"
+    {
+      time 0.080000 5.066667
+      param "!player"
+      event_ramp
+      {
+        0.9400 1.0000
+        4.1567 1.0000
+      }
+    }
+    event gesture "shake"
+    {
+      time 2.613334 5.553333
+      param "A_bg_shaking"
+      absolutetags playback_time
+      {
+        "apex" 0.115333
+        "extreme" 0.358277
+        "loop" 0.562358
+        "end" 0.825397
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "extreme" 0.344828
+        "loop" 0.603448
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 5.133334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.3820 0.2700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.3940 0.2600
+        }
+        {
+        }
+        "upper_raiser" combo 
+        {
+          0.5180 0.5900
+          1.3100 0.2300
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.2680 0.5000
+          1.0520 0.4800
+        }
+        {
+        }
+        "chin_raiser" 
+        {
+          0.3380 0.2400
+        }
+        "puckerer" combo 
+        {
+        }
+        {
+        }
+        "funneler" combo range 0.0 2.0 
+        {
+        }
+        {
+        }
+        "stretcher" combo 
+        {
+        }
+        {
+        }
+        "presser" 
+        {
+          0.3239 0.4200
+        }
+        "tightener" 
+        {
+          0.4023 0.6300
+        }
+        "jaw_clencher" 
+        {
+          0.9051 0.3000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.7516 0.6600
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "80"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

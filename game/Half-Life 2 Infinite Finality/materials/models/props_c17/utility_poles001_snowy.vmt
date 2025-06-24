@@ -1,0 +1,7 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_c17/utility_poles001_snowy"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+}

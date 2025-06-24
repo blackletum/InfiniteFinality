@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"	"models\props\cs_office\snowmanc"
+	"$surfaceprop" "Snow"
+
+}

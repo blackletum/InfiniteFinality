@@ -1,0 +1,54 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 1.800000 -1.000000
+  param "1.000000"
+  loopcount "-1"
+}
+actor "alyx"
+{
+  channel "facelookat"
+  {
+    event lookat "lookplayer"
+    {
+      time 0.006666 2.020000
+      param "!player"
+      event_ramp
+      {
+        0.5040 1.0000
+        2.0133 1.0000
+      }
+    }
+    event face "facewent"
+    {
+      time 0.013333 2.020000
+      param "target_puzzle_went"
+      event_ramp
+      {
+        0.4920 1.0000
+        2.0067 1.0000
+      }
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "staywait"
+    {
+      time 0.006666 2.020000
+      param "target_button_puzzle_wait"
+      param2 "Walk"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_icesheets/icesheetsmall05"
+	"$surfaceprop" "Glass"
+}

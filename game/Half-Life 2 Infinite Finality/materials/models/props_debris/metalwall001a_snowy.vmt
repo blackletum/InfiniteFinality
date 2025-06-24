@@ -1,0 +1,12 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_debris/metalwall001a_snowy"
+	"$surfaceprop" "metal"
+	"%keywords" "c17industrial"
+	"$bumpmap" "Metal/metalwall001a_normal"
+	"$envmaptint" "[ .56 .56 .56 ]"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+}

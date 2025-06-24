@@ -1,0 +1,6 @@
+SDK_UnlitGeneric
+{
+	"$basetexture" "skybox/sky_spire_dawnrt"
+	"$nofog" 1
+	$ignorez 1
+}

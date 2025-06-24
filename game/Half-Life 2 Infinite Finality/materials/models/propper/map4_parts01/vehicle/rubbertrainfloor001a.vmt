@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"Vehicle/rubbertrainfloor001a"
+	"$envmap"		"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+	"$envmapcontrast"		"1"
+	"$envmapsaturation"		"1"
+	"$envmaptint"		"[ .25 .25 .25 ]"
+	"$model"		"1"
+}

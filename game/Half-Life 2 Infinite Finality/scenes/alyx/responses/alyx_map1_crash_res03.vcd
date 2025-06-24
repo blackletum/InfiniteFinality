@@ -1,0 +1,88 @@
+// Choreo version 1
+actor "Alyx"
+{
+  channel "audio"
+  {
+    event speak "al_rbed_giveupnow01"
+    {
+      time 0.152778 2.761894
+      param "ep_02.al_rbed_plususe03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "look at player"
+    {
+      time 0.080000 2.797500
+      param "!player"
+      event_ramp
+      {
+        0.1211 0.3204 "curve_bspline_to_curve_bspline"
+        0.5838 0.5525 "curve_bspline_to_curve_bspline"
+        1.8852 0.5580 "curve_bspline_to_curve_bspline"
+        2.5230 0.3481 "curve_bspline_to_curve_bspline"
+      }
+    }
+  }
+  channel "move to"
+  {
+  }
+  channel "gestures"
+  {
+  }
+  channel "postures"
+  {
+  }
+  channel "facial flex"
+  {
+    event flexanimation "felx"
+    {
+      time 0.027778 2.909723
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.2438 0.3700
+          0.8208 1.0000
+        }
+        {
+          0.2438 0.0100
+          0.8146 0.0000
+        }
+        "cheek_puffer" combo 
+        {
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2175 0.4100
+          0.7075 0.6700
+          1.4375 0.5400
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+        }
+        "gesture_updown" range -1.0 1.0 
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "96"
+  "ExpressionTool" "80"
+  "RampTool" "98"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

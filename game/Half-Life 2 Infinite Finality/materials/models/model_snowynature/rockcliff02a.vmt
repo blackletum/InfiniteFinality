@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_snowynature/rockcliff02a"
+	"$detailblendfactor" .7
+	"$detailblendmode" 0
+}

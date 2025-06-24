@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "audio"
+  {
+    event speak "radio_broadcast"
+    {
+      time 0.020000 94.245979
+      param "radio_broadcast"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

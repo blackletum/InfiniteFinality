@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.search_supplies"
+    {
+      time 0.013333 3.629683
+      param "npc_alyx.search_supplies"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookatsupplies"
+    {
+      time 0.000000 3.633334
+      param "target_supplies_building"
+      event_ramp
+      {
+        0.5040 0.9697
+        3.2740 0.9545
+      }
+    }
+    event face "facesupplies"
+    {
+      time 0.080000 3.286667
+      param "target_supplies_building"
+      event_ramp
+      {
+        1.0000 1.0000
+        2.1440 0.9621
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.013333 3.640000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.6240 0.1900
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

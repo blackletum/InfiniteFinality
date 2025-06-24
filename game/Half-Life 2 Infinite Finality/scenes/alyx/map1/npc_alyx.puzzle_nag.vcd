@@ -1,0 +1,116 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "sound"
+  {
+    event speak "npc_alyx.puzzle02"
+    {
+      time 0.220000 5.240952
+      param "npc_alyx.puzzle02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesturre01"
+    {
+      time 0.566667 3.533334
+      param "A_g_rthdflipout"
+      absolutetags playback_time
+      {
+        "apex" 0.147727
+        "accent" 0.375000
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147727
+        "accent" 0.375000
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+  }
+  channel "facelookactor"
+  {
+    event face "faceplayer"
+    {
+      time 0.026666 2.280000
+      param "!player"
+      event_ramp
+      {
+        0.5000 1.0000
+        1.5289 1.0000
+      }
+    }
+    event lookat "lookplayer"
+    {
+      time 0.013333 2.253333
+      param "!player"
+      event_ramp
+      {
+        0.3140 0.9773
+        1.6227 0.9924
+      }
+    }
+    event lookat "lookprops"
+    {
+      time 2.253334 4.006667
+      param "target_metalprops"
+      event_ramp
+      {
+        0.1560 1.0000
+        1.3760 0.9621
+      }
+    }
+    event face "faceprops"
+    {
+      time 2.286666 4.079999
+      param "target_metalprops"
+      event_ramp
+      {
+        0.2000 0.9924
+        1.3660 1.0000
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time -0.000000 5.260001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.8580 0.4700
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.8568 0.4300
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

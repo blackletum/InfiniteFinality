@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture"	"ground\snow01"
+	"$surfaceprop" "snow"
+
+}

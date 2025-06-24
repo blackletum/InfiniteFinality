@@ -1,0 +1,15 @@
+SDK_LightmappedGeneric
+{
+	$BaseTexture		"tools/toolsplayerclip_gravel"
+	$SurfaceProp		"gravel"
+
+	$Translucent		"1"
+	$NoDecal		"1"
+
+	%CompileNoDraw		"1"
+	%CompileDetail		"1"
+	%PlayerClip		"1"
+	%CompilePassBullets	"1"
+
+	%Keywords		"tools,playerclip,gravel"
+}

@@ -1,0 +1,324 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.furry"
+    {
+      time 0.246667 2.847665
+      param "npc_alyx.furry"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.cute"
+    {
+      time 2.926667 7.203673
+      param "npc_alyx.cute"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.xen"
+    {
+      time 7.300001 17.096010
+      param "npc_alyx.xen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.pest_controll"
+    {
+      time 17.166666 20.632540
+      param "npc_alyx.pest_controll"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gesture"
+    {
+      time 0.500000 2.800000
+      param "A_bg_acctdwn_chinout"
+      absolutetags playback_time
+      {
+        "apex" 0.147059
+        "extreme" 0.294118
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "extreme" 0.294118
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "gesture02"
+    {
+      time 2.900000 5.700000
+      param "A_bg_upchindwn"
+      absolutetags playback_time
+      {
+        "apex" 0.132530
+        "extreme" 0.240964
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.132530
+        "extreme" 0.240964
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+    event gesture "gesture03"
+    {
+      time 7.439999 10.906666
+      param "A_g_rtl_dwnshp"
+      absolutetags playback_time
+      {
+        "apex" 0.281553
+        "accent" 0.398058
+        "loop" 0.631068
+        "end" 0.728155
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.281553
+        "accent" 0.398058
+        "loop" 0.631068
+        "end" 0.728155
+      }
+    }
+    event gesture "gesture04"
+    {
+      time 11.526669 13.826669
+      param "a_bg_htiltrt"
+      absolutetags playback_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.117647
+        "extreme" 0.338235
+        "loop" 0.514706
+        "end" 0.588235
+      }
+    }
+    event gesture "gesture06"
+    {
+      time 13.773334 16.740000
+      param "A_g_hflipout"
+      absolutetags playback_time
+      {
+        "apex" 0.136364
+        "accent" 0.329545
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.136364
+        "accent" 0.329545
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "gesture05"
+    {
+      time 17.073334 20.040001
+      param "A_gesture03"
+      absolutetags playback_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+  }
+  channel "lookatfaceat"
+  {
+    event lookat "lookatcrab"
+    {
+      time 0.340000 2.680000
+      param "furrycrab_target"
+      event_ramp
+      {
+        0.4000 1.0000
+        1.6880 1.0000
+      }
+    }
+    event face "faceheadcrab"
+    {
+      time 0.186667 3.060000
+      param "furrycrab_target"
+      event_ramp
+      {
+        0.4980 1.0000
+        1.6540 1.0000
+      }
+    }
+    event lookat "lookgordon"
+    {
+      time 3.480001 20.039999
+      param "!player"
+      event_ramp
+      {
+        1.0020 1.0000
+        16.0460 1.0000
+      }
+    }
+    event face "facegordon"
+    {
+      time 3.073333 19.559999
+      param "!player"
+      event_ramp
+      {
+        0.5040 1.0000
+        16.0000 1.0000
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.040000 20.820000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.8600 0.2400
+          4.4245 0.6100
+          5.0968 0.5000
+          6.4756 0.4700
+          7.6491 0.0000
+          9.8493 0.2900
+          12.9536 0.0600
+          13.4673 0.4600
+          17.3709 0.2500
+          18.4130 0.2200
+        }
+        {
+          3.6045 0.5100
+          4.6756 1.0000
+          6.0422 0.9800
+          7.6467 0.4900
+          13.4673 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.6622 0.3200
+          1.1200 0.8000
+          2.7756 0.1300
+          17.5783 0.1600
+          18.4022 0.4100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.3800 0.9500
+          0.5756 0.6500
+          1.0978 0.3700
+          8.9163 0.0900
+          9.8349 0.4200
+          11.4488 0.0700
+          13.4864 0.2800
+          17.7326 0.4300
+          18.1702 1.0000
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          3.2558 0.5700
+        }
+        "corner_puller" combo 
+        {
+          3.0140 0.5000
+          5.0057 1.0000
+          8.2371 0.6200
+          18.4682 0.4000
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          4.7657 0.3400
+          4.9800 1.0000
+          6.8886 0.4300
+          18.4276 0.6800
+        }
+        {
+        }
+        "chin_raiser" 
+        {
+          8.6574 0.0500
+          9.7898 0.3400
+          13.0971 0.1600
+        }
+        "tightener" 
+        {
+        }
+      }
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetocrab"
+    {
+      time 0.213334 2.493334
+      param "furrycrab_target"
+      param2 "Run"
+      event_ramp
+      {
+        0.5040 1.0000
+        1.9320 1.0000
+      }
+      distancetotarget 60.00
+    }
+    event moveto "followgordon"
+    {
+      time 6.960000 18.966669
+      param "!player"
+      param2 "Walk"
+      distancetotarget 65.00
+      forceshortmovement
+    }
+  }
+}
+
+scalesettings
+{
+  "GestureTool" "100"
+  "ExpressionTool" "92"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

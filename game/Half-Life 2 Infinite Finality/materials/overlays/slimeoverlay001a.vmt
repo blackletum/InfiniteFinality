@@ -1,0 +1,6 @@
+SDK_lightmappedgeneric
+{
+	"$basetexture" "overlays/slimeoverlay001a"
+	"$translucent" 1
+	"$decal" 1
+}

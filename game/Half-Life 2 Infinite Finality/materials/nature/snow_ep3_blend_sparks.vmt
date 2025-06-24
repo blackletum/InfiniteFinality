@@ -1,0 +1,17 @@
+"SDK_WorldVertexTransition"
+{
+	"$basetexture" "nature/snow_ep3"
+	"$basetexture2" "nature/snow_ep3"
+	"$surfaceprop" "Snow"
+	"$surfaceprop2" "Snow"
+	"$blendmodulatetexture" "nature/blendtexture01"
+	
+	"$bumpmap" "nature/snow_ep3_normal_sparks"
+	"$bumpmap2" "nature/snow_ep3_normal"
+	
+	"$envmap" "envmaps/envmapnoise3c"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[1.25 1.3 1.6]"	
+	
+
+}

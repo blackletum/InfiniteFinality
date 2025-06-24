@@ -1,0 +1,7 @@
+SDK_LightmappedGeneric
+{
+$basetexture "decals\infstains"
+$translucent 1
+$vertexcolor 1
+$vertexalpha 1
+}

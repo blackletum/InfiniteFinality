@@ -1,0 +1,107 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 7.000000 -1.000000
+  param "6.000000"
+  loopcount "-1"
+}
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.look_around_ver02"
+    {
+      time 0.080000 5.428435
+      param "npc_alyx.look_around_ver02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetowait"
+    {
+      time 5.379999 7.626666
+      param "target_combine_barrack_wait2"
+      param2 "Walk"
+    }
+    event face "facemonitor"
+    {
+      time 5.000000 7.620000
+      param "target_combine_barrack_monitor"
+      event_ramp
+      {
+        0.4960 0.9848
+        2.4700 1.0000
+      }
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookgordon"
+    {
+      time 0.020000 7.633332
+      param "!player"
+      event_ramp
+      {
+        0.4920 0.9924
+        7.2887 0.9848
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture"
+    {
+      time 0.780000 3.746667
+      param "A_gesture03p"
+      absolutetags playback_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.170455
+        "accent" 0.352273
+        "loop" 0.545455
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 5.913333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          1.3940 0.0800
+          1.5680 0.4700
+          1.9120 0.4800
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

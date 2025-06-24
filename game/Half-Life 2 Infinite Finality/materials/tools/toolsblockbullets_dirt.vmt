@@ -1,0 +1,13 @@
+SDK_LightmappedGeneric
+{
+	$BaseTexture		"tools/toolsblockbullets_dirt"
+	$SurfaceProp		"dirt"
+
+	$Translucent		"1"
+	$NoDecal		"1"
+
+	%CompileNoDraw		"1"
+	%CompileDetail		"1"
+
+	%Keywords 		"tools,block_bullets,dirt"
+}

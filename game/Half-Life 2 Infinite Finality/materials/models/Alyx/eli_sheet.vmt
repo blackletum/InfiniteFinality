@@ -1,0 +1,8 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/alyx/eli_sheet"
+    "$bumpmap" "models/alyx/eli_sheet_normal"
+	"$halflambert" 1
+	"$nodecal" "1"
+
+}

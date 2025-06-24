@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/Magnusson/maggie_facemap"
+	"$halflambert" 1
+}

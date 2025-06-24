@@ -1,0 +1,205 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.locked_ofcourse"
+    {
+      time 0.213333 3.498344
+      param "npc_alyx.locked_ofcourse"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.ticket_out"
+    {
+      time 4.993332 8.797323
+      param "npc_alyx.ticket_out"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.wait_here"
+    {
+      time 9.146667 11.451996
+      param "npc_alyx.wait_here"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "lookatbutton"
+    {
+      time 0.020000 2.993334
+      param "target_button_gate01"
+      event_ramp
+      {
+        0.5000 1.0000
+        2.4887 0.9848
+      }
+    }
+    event lookat "lookwent"
+    {
+      time 4.760001 7.500001
+      param "target_puzzle_went"
+      event_ramp
+      {
+        0.4980 0.9848
+        2.0000 0.9621
+      }
+    }
+    event lookat "lookgordon"
+    {
+      time 7.506668 11.446668
+      param "!player"
+      event_ramp
+      {
+        0.1240 1.0000
+        3.6933 0.9848
+      }
+    }
+    event face "facebutton"
+    {
+      time 0.053333 3.513334
+      param "target_button_gate01"
+      event_ramp
+      {
+        0.3280 0.9924
+        2.7827 1.0000
+      }
+    }
+    event face "facewent"
+    {
+      time 4.280000 11.459999
+      param "target_puzzle_went"
+      event_ramp
+      {
+        0.4960 1.0000
+        6.5240 0.9924
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture"
+    {
+      time 1.820000 4.853333
+      param "A_bg_hroll"
+      absolutetags playback_time
+      {
+        "apex" 0.111111
+        "extreme" 0.400000
+        "loop" 0.577778
+        "end" 0.688889
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.111111
+        "extreme" 0.400000
+        "loop" 0.577778
+        "end" 0.688889
+      }
+      sequenceduration 3.033333
+    }
+    event gesture "gesture02"
+    {
+      time 4.980000 7.780000
+      param "A_bg_chinout"
+      absolutetags playback_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetoposition"
+    {
+      time 6.406667 11.413334
+      param "target_button_puzzle_wait"
+      param2 "Walk"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.009830 11.469830
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.4269 0.4800
+          1.3442 0.4600
+          1.9788 0.5100
+          5.2328 0.5100
+          5.4857 0.7800
+          7.0596 0.1600
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          5.1942 0.0700
+          5.5019 0.4200
+          6.3904 0.3200
+          7.0558 0.0000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.6250 0.0900
+          1.9769 1.0000
+          5.4888 0.3800
+          9.7135 0.1200
+          10.0000 0.4800
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          5.1916 0.0500
+          5.4975 0.5900
+          6.9686 0.2300
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          2.8011 0.1000
+          3.2014 0.4700
+          4.3151 0.1400
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "106"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

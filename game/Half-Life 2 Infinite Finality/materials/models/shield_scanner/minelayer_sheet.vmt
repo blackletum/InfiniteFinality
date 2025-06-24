@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/shield_scanner/minelayer_sheet"
+	"$bumpmap" "models/shield_scanner/minelayer_sheet_normal"
+	"$envmap" "env_cubemap"
+	"$selfillum" 1
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$surfaceprop" "metal"
+}

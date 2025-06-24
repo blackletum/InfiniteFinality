@@ -1,0 +1,7 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/xen_npcs/houndice/houndeye_ice"
+	"$surfaceprop" "Alienflesh"
+	"$bumpmap" "models/xen_npcs/houndice/houndeye_normal"
+	"$selfillum" 1
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"Metal/metalbeam_bts_001a"
+	"%noportal"		"1"
+	"%keywords"		"portal"
+	"$model"		"1"
+}

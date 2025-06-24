@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture" "mat_hiperborea/map4/armory_board"
+	"$translucent" 1
+}

@@ -1,0 +1,10 @@
+SDK_VertexLitGeneric
+{
+	// Original shader: VertexLitTexture
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/alyx/eli_sheet_dirty"
+    "$bumpmap" "models/alyx/eli_sheet_dirty_normal"
+	"$halflambert" 1
+	"$nodecal" "1"
+
+}

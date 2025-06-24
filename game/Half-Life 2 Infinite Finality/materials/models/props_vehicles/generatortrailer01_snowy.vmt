@@ -1,0 +1,7 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_vehicles/generatortrailer01_snowy"
+  	"$surfaceprop" "metal"
+
+
+}

@@ -1,0 +1,17 @@
+SDK_VertexLitGeneric
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "Models/Items/itemcrate_sheet"
+	"$selfillum" 1
+	
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$selfIllumTint"
+			"sinemin" 0.3
+			"sinemax" .8
+			"sineperiod" 2.00
+		}
+	}
+}

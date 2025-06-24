@@ -1,0 +1,107 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.broadcast01"
+    {
+      time 0.153334 7.064173
+      param "npc_alyx.broadcast01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_alyx.broadcast02"
+    {
+      time 8.993333 13.298344
+      param "npc_alyx.broadcast02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.033333 7.120000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.3800 0.3600
+          0.7580 0.2400
+          1.2160 0.1400
+          4.5979 0.3300
+          4.9271 0.5700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.7987 0.0200
+          1.3395 0.6100
+          2.1812 0.4300
+          2.9896 0.8600
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 8.706667 13.293334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.5360 0.2200
+          0.7820 0.4000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.4976 0.1600
+          1.6622 0.4400
+          2.1267 0.3800
+          3.3553 0.3700
+          3.7021 0.6200
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.5468 0.1900
+          0.7625 0.3500
+          3.1778 0.2800
+          3.7000 0.5800
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "trigger"
+  {
+    event firetrigger "trigger_broadcast"
+    {
+      time 7.266666 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "90"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

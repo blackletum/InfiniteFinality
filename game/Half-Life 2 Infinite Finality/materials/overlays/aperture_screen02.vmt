@@ -1,0 +1,5 @@
+SDK_UnlitGeneric
+{
+	"$basetexture" "overlays/aperture_screen02"
+	"$translucent" 1
+}

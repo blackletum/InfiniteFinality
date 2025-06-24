@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/ammo_can_01"
+	"$bumpmap" "models/model_hiperborea/ammo_can_01_normal"
+}

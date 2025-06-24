@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_silo/transformer_snowy"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\props_silo\transformer_ref"
+}

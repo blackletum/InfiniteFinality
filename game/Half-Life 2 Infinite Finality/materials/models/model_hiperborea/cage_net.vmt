@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/cage_net"
+	"$translucent" 1
+}

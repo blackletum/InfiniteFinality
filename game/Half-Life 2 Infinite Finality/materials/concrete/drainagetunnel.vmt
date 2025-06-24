@@ -1,0 +1,7 @@
+SDK_LightmappedGeneric
+{
+$baseTexture "concrete/drainagetunnel"
+$envmap env_cubemap
+$envmapmask "concrete\drainagetunnel_ref"
+$surfaceprop concrete
+}

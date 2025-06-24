@@ -1,0 +1,14 @@
+SDK_LightmappedGeneric
+{
+	$BaseTexture		"tools/toolsclip_metalgate"
+	$SurfaceProp		"metalgrate"
+
+	$Translucent		"1"
+	$NoDecal		"1"
+
+	%CompileNoDraw		"1"
+	%CompileDetail		"1"
+	%CompileClip 		"1"
+
+	%Keywords 		"tools,clip,metalgrate"
+}

@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_foliage/pine_ep3_trunk"
+	"$bumpmap" "models/props_foliage/pine_ep3_trunk_normal"
+	"$surfaceprop" "wood"
+}

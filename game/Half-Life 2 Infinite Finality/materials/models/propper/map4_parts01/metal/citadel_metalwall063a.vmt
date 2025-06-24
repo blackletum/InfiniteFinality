@@ -1,0 +1,27 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"Metal/metalwall063a"
+	"%keywords"		"combine"
+	"$envmap"		"env_cubemap"
+	"ldr?$envmaptint"		"[ .56 .56 .75 ]"
+	"$envmapcontrast"		"1"
+	"$envmapsaturation"		"1"
+	"SDK_LightmappedGeneric_DX9"
+	{
+		"$bumpmap"		"metal/metalwall063a_normal"
+		"$normalmapalphaenvmapmask"		"1"
+	}
+	"SDK_LightmappedGeneric_DX8"
+	{
+		"$bumpmap"		"metal/metalwall063a_normal"
+		"$nodiffusebumplighting"		"1"
+		"$normalmapalphaenvmapmask"		"1"
+	}
+	"SDK_LightmappedGeneric_NoBump_DX8"
+	{
+		"$basetexture"		"metal/citadel_metalwall063a"
+		"$basealphaenvmapmask"		"1"
+	}
+	"hdr?$envmaptint"		"[.09 .1 .12]"
+	"$model"		"1"
+}

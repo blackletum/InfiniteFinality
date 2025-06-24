@@ -1,0 +1,5 @@
+SDK_LightmappedGeneric
+{
+$basetexture "Concrete/alleys_sidewalk"
+$surfaceprop concrete
+}

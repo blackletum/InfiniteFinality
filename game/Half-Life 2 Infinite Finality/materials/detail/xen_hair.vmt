@@ -1,0 +1,19 @@
+SDK_UnlitGeneric
+{
+	"$basetexture" "detail/xen_hair"
+	"$translucent" "1"
+	"$vertexcolor" 1
+	"$receiveflashlight" 1
+
+
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar"		"$basetexture"
+			"animatedTextureFrameNumVar"	"$frame"
+			"animatedTextureFrameRate"	"60"
+		}
+	}
+}

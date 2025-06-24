@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_aperture_if/aperture_lamp"
+	"$bumpmap" "models/props_aperture_if/aperture_lamp_norrmal"
+}

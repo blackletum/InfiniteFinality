@@ -1,0 +1,12 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture"		"metal/metalwall076a"
+	"$basealphaenvmapmask"		"1"
+	"%keywords"		"combine"
+	"$envmap"		"env_cubemap"
+	"ldr?$envmaptint"		"[ 0.55 0.55 0.75 ]"
+	"$envmapcontrast"		"1"
+	"$envmapsaturation"		"1"
+	"hdr?$envmaptint"		"[.09 .1 .12]"
+	"$model"		"1"
+}

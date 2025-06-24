@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/props_c17/substation02_snowy"
+	"$surfaceprop" "metal"
+}

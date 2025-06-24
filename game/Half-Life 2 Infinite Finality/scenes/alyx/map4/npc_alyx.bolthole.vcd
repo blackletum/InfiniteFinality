@@ -1,0 +1,78 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "voice"
+  {
+    event speak "npc_alyx.bolthole"
+    {
+      time 0.066667 3.549093
+      param "npc_alyx.bolthole"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookfaceat"
+  {
+    event lookat "looksign"
+    {
+      time 0.013333 1.986666
+      param "target_bolthole01"
+      event_ramp
+      {
+        0.2294 0.9924
+        1.6471 1.0000
+      }
+    }
+    event face "facesign"
+    {
+      time 0.166666 1.700000
+      param "target_bolthole01"
+      event_ramp
+      {
+        0.2686 0.9848
+        1.2961 1.0000
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.013333 3.546667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          2.2660 0.0800
+          2.4460 0.2000
+          3.0820 0.1100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.3360 0.6400
+          1.1820 0.8000
+          1.7320 0.6100
+          1.9540 0.0500
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "102"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

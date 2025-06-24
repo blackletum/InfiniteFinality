@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_ice_formations/ice_boulder_map2_dyn"
+	"$bumpmap" "nature/icewallep3_normal"
+}

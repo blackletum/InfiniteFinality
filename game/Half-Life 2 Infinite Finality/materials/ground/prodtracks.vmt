@@ -1,0 +1,6 @@
+SDK_LightmappedGeneric
+{
+	"$basetexture"	"ground\prodtracks"
+	"$surfaceprop" "dirt"
+
+}

@@ -1,0 +1,6 @@
+"SDK_VertexLitGeneric"
+{
+	"$basetexture" "models/model_combine/crate_glass"
+	"$nocull" 1
+	"$translucent" 1
+}

@@ -1,0 +1,5 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_ice_formations/ice_formation_01"
+	"$surfaceprop" "Ice"
+}

@@ -1,0 +1,8 @@
+"SDK_Refract"
+{
+	"$surfaceprop" "ice"
+	"$normalmap"	"mat_hiperborea/ice_lake_breakable_normal"
+	"$dudvmap"	"mat_hiperborea/ice_lake_breakable_dudv"
+	$refracttint "[1 1 1]"
+	$refractamount .3
+}

@@ -1,0 +1,6 @@
+SDK_VertexLitGeneric
+{
+	"$basetexture" "models/model_hiperborea/straps_snow"
+	"$translucent" 1
+	"$nocull" 1
+}
