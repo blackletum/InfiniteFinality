@@ -1,0 +1,78 @@
+detail
+{
+	xen_hair
+	{
+		"density" "1000.0"
+
+		Group1
+		{
+			"alpha" "1"
+			Model1
+			{
+				"sprite" "0 0 205 239 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.6"
+				"detailOrientation" "2"
+			}
+
+			Model2
+			{
+				"sprite" "190 0 169 239 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.6"
+				"detailOrientation" "2"
+			}
+
+			Model3
+			{
+				"sprite" "370 0 144 239 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.2"
+				"detailOrientation" "2"
+			}
+
+			Model4
+			{
+				"sprite" "0 253 175 253 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.1"
+				"detailOrientation" "2"
+			}
+
+			Model5
+			{
+				"sprite" "185 253 150 253 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.8"
+				"detailOrientation" "2"
+			}
+
+			Model6
+			{
+				"sprite" "350 253 165 253 512" 
+				"spritesize" "0.5 0.0 25 33"
+				"spriterandomscale" "0.5"
+				"amount" "0.7"
+				"detailOrientation" "2"
+			}
+		}
+
+		Group4
+		{
+			"alpha" "0.3"
+
+		}
+
+		Group5
+		{
+			"alpha" "0.0"
+
+		}
+	}
+
+}
